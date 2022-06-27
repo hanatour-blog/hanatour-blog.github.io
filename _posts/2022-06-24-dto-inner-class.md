@@ -1,8 +1,7 @@
 ---
-layout: post
-title: 'JAVA DTO 작성할 때 고민거리'
-author: ejlee
-date: 2022-06-24 12:03
+title: "JAVA DTO 를 Inner Class 를 향한 고민"
+categories: blog  
+tags: java
 ---
 
 ## 어떤 얘기가 나왔는가?
