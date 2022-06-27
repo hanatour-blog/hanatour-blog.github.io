@@ -3,6 +3,8 @@ title: "JAVA DTO 를 Inner Class 를 향한 고민"
 categories: blog  
 tags: java
 ---
+> DTO.. 어느 개발자는 DTO class 가 너무 많고.. 어느 개발자는 너무 inner class 를 사용해서 추적이 어려워요ㅜㅜ
+
 
 ## 어떤 얘기가 나왔는가?
 * 기능은 달라도 DTO 컬럼이 같다면 하나로 통일해야하는가?
