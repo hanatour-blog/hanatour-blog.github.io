@@ -20,7 +20,8 @@ request, response dto 를 생성하면서 클래스 명이 계속 중복되는 �
 
 
 
-## 엥 그러면 무조건 DTO 생성은 inner class 를 사용해야하나요?? (=DTO.. inner class 로 관리해야해? 아니면 기능마다 DTO 생성해서 관리해야해?)
+## 엥 그러면 무조건 DTO 생성은 inner class 를 사용해야하나요?? 
+(=DTO.. inner class 로 관리해야해? 아니면 기능마다 DTO 생성해서 관리해야해 ??)
 아뇨.. 개발에 있어서 무조건과 무지성은 정말 안된다고 생각합니다..
 inner class 로 만들려는 목적이 도메인 관리를 위한 거라면 차라리 패키지를 명확하게 구분하는게 더 낫다고 생각합니다
 처음에는 관리가 편할것 같은데 **Create, Update, Delete, Select** 등등 여러 목적으로 계속 생기면 DTO 모델 클래스 내 내용이 복잡해집니다.
@@ -69,14 +70,5 @@ public class ResponseDTO {
         public String response4;
         public int response5;
     }
-}
-```
-
-```java
- public Long save(PostsDto.Request dto,String nickname) {
-    User user = userRepository.findByNickname(nickname);
-    dto.setUser(user);
-    Posts posts = dto.toEntity();
-    postsRepository.save(posts);return posts.getId();
 }
 ```
