@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "HanaTour"
-  avatar           : "/assets/images/hanatour-logo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/hanatour-logo.png"
   bio              : "No. 1 travel agency"
   #location         : "Seoul, Korea"
   email            : 15771233@hanatour.com
