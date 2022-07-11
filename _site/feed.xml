@@ -1,4 +1,870 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-08T16:07:16+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">하나투어 기술블로그</title><subtitle></subtitle><author><name>HanaTour</name><email>15771233@hanatour.com</email></author><entry><title type="html">Hanatour 기술블로그 셋팅</title><link href="http://localhost:4000/2022/03/20/intelli-j-%ED%8C%8C%EC%9D%BC-%EC%A0%80%EC%9E%A5%EC%8B%9C-reformat-imports-%EC%A0%95%EB%A6%AC/" rel="alternate" type="text/html" title="Hanatour 기술블로그 셋팅" /><published>2022-03-20T00:00:00+09:00</published><updated>2022-03-20T00:00:00+09:00</updated><id>http://localhost:4000/2022/03/20/intelli-j-%ED%8C%8C%EC%9D%BC-%EC%A0%80%EC%9E%A5%EC%8B%9C-reformat-imports-%EC%A0%95%EB%A6%AC</id><content type="html" xml:base="http://localhost:4000/2022/03/20/intelli-j-%ED%8C%8C%EC%9D%BC-%EC%A0%80%EC%9E%A5%EC%8B%9C-reformat-imports-%EC%A0%95%EB%A6%AC/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-08T18:51:56+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">하나투어 기술블로그</title><subtitle></subtitle><author><name>HanaTour</name><email>15771233@hanatour.com</email></author><entry><title type="html"></title><link href="http://localhost:4000/2022/07/08/2022-07-08-%EB%B2%BD%EB%8A%90%EB%82%80-%EC%8D%B0%ED%91%BC%EB%8B%A4-1/" rel="alternate" type="text/html" title="" /><published>2022-07-08T18:51:56+09:00</published><updated>2022-07-08T18:51:56+09:00</updated><id>http://localhost:4000/2022/07/08/2022-07-08-%EB%B2%BD%EB%8A%90%EB%82%80-%EC%8D%B0%ED%91%BC%EB%8B%A4#1</id><content type="html" xml:base="http://localhost:4000/2022/07/08/2022-07-08-%EB%B2%BD%EB%8A%90%EB%82%80-%EC%8D%B0%ED%91%BC%EB%8B%A4-1/">&lt;p&gt;내가 몸담고 있는 하나투어는 프로젝트가 종료될때마다 구성원들이 모여 회고를 진행합니다. 서로 좋았던 점, 개선해야 할 점 등을 공유하고 발전을 도모하는 좋은 문화입니다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;[ KPT 회고 ]&lt;/p&gt;
+
+  &lt;p&gt;Keep : 좋았던 점을 유지&lt;/p&gt;
+
+  &lt;p&gt;Problem : 문제점 정의&lt;/p&gt;
+
+  &lt;p&gt;Try : 해결방법, 개선 사항 등&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;이 경험을 바탕으로,&lt;/p&gt;
+
+&lt;p&gt;과거 진행했던 토이 프로젝트 중 아픈 손가락에 해당하는 프로젝트가 있어 이를 &lt;strong&gt;회고&lt;/strong&gt; 해보고 무엇이 문제이고 어떻게 개선하고 극복할 수 있는지 정리해보는 시간을 가지도록 하겠습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-01.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;쓰지도 않는 EC2 인스턴스 비용을 3년 넘게 납부&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;나에게 금융, 재테크 등 돈과 관련된 분야는 전혀 관심 사항이 아니었다. (월급은 계좌에 차곡차곡 쌓임 당하는 편)&lt;/p&gt;
+
+&lt;p&gt;그러던 2017년 말, 가상화폐 열풍에 휩쓸려 큰 돈을 들고 고점에 진입하게 되었다. 그리고 머지 않아 공포의 하락장이 시작되었다. (리플 40층 여기 있어요…)&lt;/p&gt;
+
+&lt;p&gt;친구들과 니가 더 많이 물렸냬, 내가 더 많이 물렸냬 하며 영웅담 아닌 영웅담을 술 안주 삼아 하루 하루 버티며 그렇게 2017년은 마무리 당했다.&lt;/p&gt;
+
+&lt;p&gt;2018년 새해가 밝았고 내 물린 자산의 전망은 역시나 어두웠다.&lt;/p&gt;
+
+&lt;p&gt;조치가 필요하다는 생각이 들었다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“손절하고 저점을 잡은 후 매수 혹은 물타기 신공을 통해 고점에 팔아 원금을 회복”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;따위의 &lt;strong&gt;그 바닥&lt;/strong&gt; 해결법이 아닌 전혀 다른 방법으로 문제를 해결하고자 했다.&lt;/p&gt;
+
+&lt;p&gt;아무래도 나는 초보이고 차트의 오르내림에 금새 쪼그라들어 버리는 작은 심장을 가지고 있기 때문에 &lt;strong&gt;그 바닥&lt;/strong&gt; 해결법으로는 도저히 답이 보이지 않았다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-02.png&quot; alt=&quot;&quot; style=&quot;max-width: 300px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;얼음의 심장을 지닌 나의 로봇&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;그리하여 나는 로봇 &lt;strong&gt;리치김치맨&lt;/strong&gt;을 만들어서 가상화폐 거래 시장의 암세포에(시세 조작범, 고래 등) 맞서 싸우게 되는데…&lt;/p&gt;
+
+&lt;p&gt;과연 나는 적들과 맞서 싸워 이기고 큰 부자가 될 수 있을 것인가?&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;사실 나의 가장 큰 적은 무지한 &lt;strong&gt;나 자신&lt;/strong&gt;이었다.  어쩌면 내가 바로 암세포… 결국 내 자신과의 싸움… 쿨럭…&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;작은 아이디어에서 시작되었다.&lt;/p&gt;
+
+&lt;p&gt;만약 거래소에서 open API를 제공해준다면, 굳이 내가 거래하지 않아도 코딩된 규칙에 의해 자동으로 거래를 할 수 있는 로봇을 만들 수 있다. 이 로봇은 얼음같은 심장으로 밤이고 낮이고 가리지 않고 아주 많은 거래를 통해 나에게 큰 부를 안겨줄 것이다.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-03.jpeg&quot; alt=&quot;&quot; style=&quot;max-width: 300px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;두...두근!!!&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;이글은 과거 정리해둔 글, 스크린샷, 소스코드 등을 기반으로 재구성 되었습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;mk1&quot;&gt;Mk.1&lt;/h1&gt;
+
+&lt;p&gt;예상대로 가상화폐 거래소는 open API를 제공해주고 있었다. 순조로운 시작이었다. 문서를 참고하여 개발 Key를 발급받고 nodejs 서버에서 API를 호출했다.&lt;/p&gt;
+
+&lt;p&gt;nodejs 연동 샘플 코드가 작동하지 않아 직접 수정해서 사용했다.
+물론 당시 나의 능력을 고려해 봤을때 내가 잘 못 사용했을 수 있다.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-04.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;(역시.. 아무리 생각해봐도 샘플 코드가 잘못함)&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// 대충 이런 느낌&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;xcoinAPI&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;XCoinAPI&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;API_KEY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;API_SECRET_KEY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt; 
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fetchTicker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;requestUrl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;/info/ticker&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;xcoinAttrs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;xcoinAPI&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;wrappXCoinForm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;requestUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;HTTP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;POST&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;xcoinAttrs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;strHost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;na&quot;&gt;params&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;xcoinAttrs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;rgParams&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                    &lt;span class=&quot;na&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;xcoinAttrs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;httpHeaders&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;parse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;0000&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tickerInfo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fetchTicker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;some&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;참고로 당시 해당 거래소에서 &lt;a href=&quot;https://namu.wiki/w/%EC%BA%94%EB%93%A4%EC%B0%A8%ED%8A%B8&quot; target=&quot;_blank&quot;&gt;캔들&lt;/a&gt;에 대한 API를 제공해주지 않아 직접 수집함&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-05.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;#첫연동 #성공적 #2018-01-15&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;생각보다 수월하게 진행되었다. 이제 다음 스텝은 매매 로직을 구상하는 것이다.&lt;/p&gt;
+
+&lt;p&gt;아주 쉬웠다. ‘가격이 올라가면 팔고 내려가면 사면 되자나?’&lt;/p&gt;
+
+&lt;p&gt;마지막 거래 가격에서 2% 올라가면 팔고 다시 판 가격에서 2% 내려갔을때 산다면??? 매수-매도 한 사이클만 돌아도 &lt;strong&gt;4%를&lt;/strong&gt; 먹는 것이다. &lt;em&gt;(참고로 4%는 잘못된 계산인데 순수했던 시절을 추억하며 굳이 정정하지 않겠다.)&lt;/em&gt;&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-06.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;가상화폐는 변동성이 크니까 하루에 매수-매도 &lt;strong&gt;10 사이클&lt;/strong&gt; 돌게 된다면 발생하는 수익은 아래와 같다.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;시작 : 100만원&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1 회&lt;/td&gt;
+      &lt;td&gt;1000000 + ( 1000000 * (4/100)) = 1040000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2 회&lt;/td&gt;
+      &lt;td&gt;1040000 + ( 1040000 * (4/100)) = 1081600&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3 회&lt;/td&gt;
+      &lt;td&gt;1081600 + ( 1081600 * (4/100)) = 1124864&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4 회&lt;/td&gt;
+      &lt;td&gt;1124864 + ( 1124864 * (4/100)) = 1169858.56&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5 회&lt;/td&gt;
+      &lt;td&gt;1169858.56 + ( 1169858.56 * (4/100)) = 1216652.9024&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;6 회&lt;/td&gt;
+      &lt;td&gt;1216653 + ( 1216653 * (4/100)) = 1265319.12&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;7 회&lt;/td&gt;
+      &lt;td&gt;1265319.12 + ( 1265319.12 * (4/100)) = 1315931.8848&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;8 회&lt;/td&gt;
+      &lt;td&gt;1315932 + ( 1315932 * (4/100)) = 1368569.28&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;9 회&lt;/td&gt;
+      &lt;td&gt;1368569.28 + ( 1368569.28 * (4/100)) = 1423312.0512&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;10 회&lt;/td&gt;
+      &lt;td&gt;1423312 + ( 1423312 * (4/100)) = 1480244.48&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;이대로 n개월이 흐른다면 내 통장 잔고는&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;잔고 :  ?,???,???,???,???,???,???,???,???,???,???,???,???,???,???,???,???,???,???&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-07.gif&quot; alt=&quot;&quot; style=&quot;max-width: 300px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;영머니!!!!!&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// 대충 이런 느낌
+function comparePrice () {
+    const currentPrice = fetch tickerInfo() 
+    if(마지막구매가격 + 2% &amp;gt; currentTicker.closePrice){
+      sell()
+    }
+    if(마지막판매가격 - 2% &amp;gt; currentTicker.closePrice) {
+      buy()
+    }
+}
+
+loop comparePrice() every 10 seconds 
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;무지의 소치였다.&lt;/p&gt;
+
+&lt;p&gt;아무리 변동성이 크다고 하지만 하루에 10회 이상 특정 가격 근처에서 2% 상승, 2% 하락 하는 현상은 발생하지 않는 것.&lt;/p&gt;
+
+&lt;p&gt;운이 좋으면 바로 오겠지만 최소 하루 혹은 워낙 고점이기 때문에 몇 달, 몇 년이 걸릴지 알 수 없는 노릇이다.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-08.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;keep&quot;&gt;KEEP&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;잘 모르는 분야(가상화폐)의 손해를 조금 아는 분야(개발)로 극복하고자 함&lt;/li&gt;
+  &lt;li&gt;javascript, nodejs 가장 친숙한 스택으로 개발&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;problem&quot;&gt;PROBLEM&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;저 바닥(가상화폐) 생리와 기본 지식 (주식, 차트 등등) 부재&lt;/li&gt;
+  &lt;li&gt;떠난 버스는 되돌아 오지 않는다. (가끔 기다려주긴 함)&lt;/li&gt;
+  &lt;li&gt;거저먹는게 쉽지 않다…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;try&quot;&gt;TRY&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;하염없이 기다리지 말고 능동적으로 매매 할 수 있는 전략을 세운다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;mk2&quot;&gt;Mk.2&lt;/h1&gt;
+
+&lt;p&gt;파도 위의 조각배 처럼 파도의 출렁임에 몸을 맡겨두고 마루와 골에서 야금 야금 이익을 실현할 수 있는 방법은 없을까?&lt;/p&gt;
+
+&lt;p&gt;말로 설명하자면 아주 간단한데…&lt;/p&gt;
+
+&lt;p&gt;가격이 싸지면 매수하고 비싸지면 매도한다.&lt;/p&gt;
+
+&lt;p&gt;가격이 올라가기 직전에 매수하고 가격이 내려가기 직전에 매도한다.&lt;/p&gt;
+
+&lt;p&gt;혹은 계속 하락하던 가격이 방향을 바꿔 올라가기 시작할때 매수하고 계속 상승하던 가격이 방향을 바꿔 내려가기 시작할때 매도한다.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-09.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;이렇게&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;말은 참 쉬운데 내가 무슨 점쟁이도 아니고 앞으로 오를지 내릴지 어떻게 예측할 수 있단 말인가!!&lt;/p&gt;
+
+&lt;p&gt;그러던 중 친구로부터 보조지표라는 것의 존재를 듣게 되었다.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-10.png&quot; alt=&quot;&quot; style=&quot;max-width: 400px; width: 100%;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;보조지표는 예로부터 주식에서 널리 쓰였나보다. (관련 지식 zero)&lt;/p&gt;
+
+&lt;p&gt;태어나서 처음 들어보는 용어들이 즐비했다. 이런 보조지표를 직접 구현해서 봇에 탑재한다면 어떨까? 희망이 생겼다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;여기서부터 내가 마음대로 해석한 내용이다. 정확하지 않은 내용이기 때문에 주의가 필요하다. (공업수학 : C)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;보아하니 대체적으로 단위 시간(봉)을 바꿔가며 서로 더하고 빼고 나누고 온갖 화장이 떡칠되어 있지만 결국 이것은 미분이 아니겠는가!?&lt;/p&gt;
+
+&lt;p&gt;미분에서 단위 시간의 간격을 좁힌다. -&amp;gt; 좁힌만큼 더 순간적인 변화를 예측할 수 있다. -&amp;gt; 정확도가 올라간다. (기적의 논리)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;만약 보조지표 계산의 기준을 1일이 아닌 3초로 변경하게 된다면?? (1일봉 → 3초봉)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;가상화폐는 오직 욕망으로 만들어진 거품이기 때문에 외부 자극에 몹시 민감하게 반응한다. 법무부장관의 발언, 세계적 CEO의 발언 등으로 급락과 급등을 반복한다.&lt;/p&gt;
+
+&lt;p&gt;그런데 내가 만약 단세포 생물이라면? 세상이 어떻게 변화하고 어떤 혼란이 발생하고 있는지, 나는 이렇게 작은데 알게 뭐임?? 그저 부표처럼 떠다니며 입 근처에 먹이가 지나가면 혓바닥만 낼름 하면 되는 것 아닌가? (물론 먹이가 작겠지만)&lt;/p&gt;
+
+&lt;p&gt;근시눈을 가지고 순간의 위험만 감지하며 살아가는 아메바, 짚신벌레가 되어 보자!&lt;/p&gt;
+
+&lt;p&gt;스트레이트 훅 같은 큰 공격이 아니라 많은 잽을 통한 포인트 위주의 경기 운영이랄까?&lt;/p&gt;
+
+&lt;p&gt;왠지 나는 부자가 될 수 있을것 같았다.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-07.gif&quot; alt=&quot;&quot; style=&quot;max-width: 300px; width: 100%;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;위키 왈 :&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://ko.wikipedia.org/wiki/RSI_(%ED%88%AC%EC%9E%90%EC%A7%80%ED%91%9C)&quot; target=&quot;_blank&quot;&gt;RSI 상대강도지수&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;상대강도지수(相對强度指數, 영어: relative strength index, RSI)는 주식, 선물, 옵션 등의 기술적 분석에 사용되는 보조 지표이다. RSI는 가격의 상승압력과 하락압력 간의 상대적인 강도를 나타낸다. 1978년 미국의 월레스 와일더(J. Welles Wilder Jr.)가 개발했다.&lt;/p&gt;
+
+  &lt;p&gt;…
+계산 방법은 다음과 같다. 주어진 기간의 모든 날의 주가에 대해서
+가격이 전일 가격보다 상승한 날의 상승분은 U(up) 값이라고 하고,
+가격이 전일 가격보다 하락한 날의 하락분은 D(down) 값이라고 한다.&lt;/p&gt;
+
+  &lt;p&gt;U값과 D값의 평균값을 구하여 그것을 각각 AU(average ups)와 AD(average downs)라 한다.&lt;/p&gt;
+
+  &lt;p&gt;AU를 AD값으로 나눈 것을 RS(relative strength) 값이라고 한다. RS 값이 크다는 것은 일정 기간 하락한 폭보다 상승한 폭이 크다는 것을 의미한다.&lt;/p&gt;
+
+  &lt;p&gt;다음 계산에 의하여 RSI 값을 구한다.&lt;/p&gt;
+
+  &lt;p&gt;RSI 계산 공식 :&lt;/p&gt;
+
+  &lt;p&gt;RSI = RS / (1 + RS) 또는, 다음과 같이 구해도 결과는 동일하다. RSI = AU / (AU + AD)&lt;/p&gt;
+
+  &lt;p&gt;…&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-11.png&quot; alt=&quot;&quot; style=&quot;max-width: 300px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;오케이~ 땡큐!&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;인터넷에 떠도는 여러 공식들을 참고하여 마침내 내 마음대로 RSI를 구현해버렸다.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-12.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;대충 이런 느낌&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;위키 왈 :&lt;/p&gt;
+
+  &lt;p&gt;Welles Wilder는 70% 이상을 초과매수 국면으로, 30% 이하를 초과매도 국면으로 규정했다. 
+따라서 RSI가 70%를 넘어서면 매도 포지션을, 30% 밑으로 떨어지면 매수 포지션을 취하는 방식이 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;RSI 70이 넘어가면 되면 과매수 된 상태 → 사는 사람이 많으니 너는 이제 슬슬 팔아라.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;RSI 30이하로 내려가면 과매도 된 상태 → 파는 사람이 많으니 너는 이제 슬슬 사라.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;이렇게 구현된 RSI 계산 결과를 이용하여 매매 로직을 추가해보자.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// 매 3초마다 실행 
+
+const currentTikcer = fetch tickerInfo()
+
+... 
+
+const rsi15 = calcRSI(tickerList, 15)
+
+if( rsi15 &amp;lt;= 30){
+    buy()
+}
+
+if( rsi15 &amp;gt;= 70){
+    sell()
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;참으로 신기한게 실행해보면 그럴듯한 결과물이 나온다. 그리하여 나는 구음진경을 거꾸로 익힌 구양봉과 어느 정도 궤를 같이 하게 되었다. (대충 &lt;a href=&quot;https://namu.wiki/w/%EC%82%AC%ED%8C%8C(%EB%AC%B4%ED%98%91%20%EC%86%8C%EC%84%A4)&quot; target=&quot;_blank&quot;&gt;사파&lt;/a&gt; 라는 이야기)&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-13.png&quot; alt=&quot;&quot; style=&quot;max-width: 300px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;구양봉 : ???&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;실제로 RSI 지수가 30이하로 떨어졌고 자동으로 buy()는 실행되었다.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-14.jpeg&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;#RSI #성공적 #2018-01-16&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-15.jpeg&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;#오후네시 #월급루팡중&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;19,864원에 매수해서 하루 뒤 20,008원에 매도된 것으로 일단 테스트를 종료하였다. (코인 수량 0.0361 → 0.0363 증가)&lt;/p&gt;
+
+&lt;p&gt;비록 적은 액수지만 하락장에서 수익이 생긴 것에 의의를 둔 것이다.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-16.png&quot; alt=&quot;&quot; style=&quot;max-width: 400px; width: 100%;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;이제 실전 배치를 위해 마지막으로 100만원을 가지고 테스트 해볼 생각이다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;큰 돈이 물려 있어서 100만원이 하찮게 생각됨&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;물론 시뮬레이션 환경을(가상 돈, 매수, 매도 함수 등) 만들고 충분히 테스트를 진행해야 했지만 이 전쟁통에 그럴 만한 여유는 없었다. &lt;em&gt;총만 들 수 있으면 바로 징집&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;너무 조급하게 시도했기 때문인지 진입 타이밍이 좋지 않았다. 하필 100만원을 넣자 마자 손쓸 틈도 없이 788,000원이 되어 버렸다. 다행히 로봇에 하루정도 맡겨두니 조금씩 회복은 하고 있었다.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-17.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;하지만 RSI 지표는 다음과 같은 상황을 대처하지 못했다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;바닥은 감지하는데 지하실은 아몰랑&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;RSI 지수가 30 이하로 떨어져서 buy()가 실행 되었지만 더 떨어져 지하실을 찍게 되는 경우 반등할때 순간적으로 RSI 지수가 70을 넘게 되면 sell()이 실행 된다는 것이다.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-18.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;keep-1&quot;&gt;KEEP&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;RSI 보조 지표를 구현하고 탑재 (이상하게 잘 동작)&lt;/li&gt;
+  &lt;li&gt;미생물 생존 전략&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;problem-1&quot;&gt;PROBLEM&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;잠깐의 테스트 결과로 축배를 너무 일찍 듬&lt;/li&gt;
+  &lt;li&gt;RSI 지표의 한계 봉착
+    &lt;ul&gt;
+      &lt;li&gt;지하실 탐지 불가&lt;/li&gt;
+      &lt;li&gt;거래량 낮아지면 이상 동작 - 3초봉 문제 (이때는 원인을 몰랐다.)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;try-1&quot;&gt;TRY&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;지 맘대로 매매되지 않는 안정 장치가 필요하겠다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;mk3&quot;&gt;Mk.3&lt;/h1&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-19.gif&quot; alt=&quot;&quot; style=&quot;max-width: 300px; width: 100%;&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;리치김치맨은 ak47을 들고 있는 원숭이처럼 피아식별 없이 무차별 난사를 하고 있었다.&lt;/p&gt;
+
+&lt;p&gt;강력한 통제가 필요하다고 생각되었다. 특정 가격 이상, 이하로는 거래 되지 않는 조건을 추가하였다.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// 대충 이런 느낌 &lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;rsi15&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;calcRSI&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tickerList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;rsi15&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;마지막거래&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;판매가격&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;currentTicker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;closePrice&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;buy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;rsi15&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;70&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;마지막거래&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;구매가격&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;currentTicker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;closePrice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;sell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이로서 최소한, 절대로 손해는 보지 않는 무적이 되었다.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-20.png&quot; alt=&quot;&quot; style=&quot;max-width: 300px; width: 100%;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;그리고 한가지 문제가 생겼다.&lt;/p&gt;
+
+&lt;p&gt;방어력에 올인에 공격력 1, 지능 0인 캐릭터가 만들어졌다. 다시 태초의 마을로 돌아가 버린것&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-08.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;#태초마을로&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;keep-2&quot;&gt;KEEP&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;없음
+    &lt;h3 id=&quot;problem-2&quot;&gt;PROBLEM&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;손해를 보지 않지만 대신 매매 빈도가 적어 큰 이익을 만들 수 없음&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;try-2&quot;&gt;TRY&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;매매에 대한 판단을 휴먼에게 위임한다면?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;mk4&quot;&gt;Mk.4&lt;/h1&gt;
+
+&lt;p&gt;보조지표는 어디까지나 보조 수단일 뿐, 결국 먹이사슬 최상위 티어인 휴먼의 강력한 결단이 필요한 것 아닐까?&lt;/p&gt;
+
+&lt;p&gt;3초 단위로 새로이 수집되는 가격과 계산된 rsi 지표를 그래프로 보여주고 즉시 거래를 실행 할 수 있는 버튼을 가진 클라이언트를 개발했다.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-21.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;가격 정보와 rsi 지표를 참고하여 휴먼이 직접 매매하면 되는 것이다.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-22.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;무슨 단타 머신을 만들어 버렸어...&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;keep-3&quot;&gt;KEEP&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;프론트 화면이 생겨 시각적으로 모니터링 가능&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;problem-3&quot;&gt;PROBLEM&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;하루 종일 모니터만 지켜보고 매매를 해야 한다.&lt;/li&gt;
+  &lt;li&gt;그냥 거래소 앱을 쓰는게…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;try-3&quot;&gt;TRY&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;UI는 유지하는 것으로 하고 추가적인 보조지표를 개발해서 RSI의 한계를 극복하는 것으로 원래의 취지를 살린다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;mk5&quot;&gt;Mk.5&lt;/h1&gt;
+
+&lt;p&gt;기상청 슈퍼 컴퓨터(심지어 세계 두뇌 짱짱맨들이 개발)도 당장 오늘의 날씨를 예측하지 못해 욕먹는 판국에 대한민국 평범한(?) 회사원이 매일 퇴근 후 쩔어 있는 상태로 코딩한 로봇이 무슨 신묘한 힘이 있다고 앞날을 예측해서 돈을 긁어 모을 수 있단 말인가?&lt;/p&gt;
+
+&lt;p&gt;현타가 쎄게 오는 와중에도 나는 포기를 몰랐다.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-23.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;님아 손절좀 ㅠ&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;만약 다른 보조 지표를 추가적으로 구현해서 매매 로직을 개선한다면??&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;위키 왈 :&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://namu.wiki/w/MACD&quot; target=&quot;_blank&quot;&gt;MACD&lt;/a&gt;는 Moving Average Convergence Divergence의 약자로 장단기 이동평균선간의 차이를 이용하여 매매신호를 포착하려는 기법으로 제럴드 아펠(Gerald Appel)에 의해 개발되었다. 오실레이터는 토마스 아스프레이에 의해 추가되었다.&lt;/p&gt;
+
+  &lt;p&gt;흔히 주가추세의 힘, 방향성, 시간을 측정하기 위해 사용된다.
+MACD의 원리는 장기 이동평균선과 단기이동평균선이 서로 멀어지게 되면(divergence) 언젠가는 다시 가까워져(convergence) 어느 시점에서 서로 교차하게 된다는 성질을 이용하여 두 개의 이동평균선이 멀어지게 되는 가장 큰 시점을 찾고자 하는 것이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;여기에서 부터는 내가 마음대로 해석한 내용이다. 정확하지 않은 내용이기 때문에 주의가 필요하다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;RSI에 비해 MACD는 원리도 복잡하고 구현도 어려웠다.&lt;/p&gt;
+
+&lt;p&gt;우선 MACD 보조지표의 근간은 &lt;a href=&quot;https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%8F%99%ED%8F%89%EA%B7%A0&quot; target=&quot;_blank&quot;&gt;지수이동평균(EMA)&lt;/a&gt;의 구현에서 시작한다.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-24.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;ㄷㄷ 내가 이걸 구현했다고?&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;지수이동평균(EMA)을 12일, 26일, 9일 간격으로 계산한 결과를 각각 준비한다.&lt;/p&gt;
+
+&lt;p&gt;그리고 그 재료를 조합하여 MACD, SIGNAL를 계산한다. 이 데이터를 3초마다 누적한다. 그리고 MACD, SIGNAL 라인이 교차하기를 기다리기만 하면 된다.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-25.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;대충 이런 느낌&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-26.png&quot; alt=&quot;&quot; style=&quot;max-width: 300px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;MACD가 SIGNAL을 뚤고 올라감 : 매수 신호&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-27.png&quot; alt=&quot;&quot; style=&quot;max-width: 300px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;SIGNAL이 MACD를 뚫고 올라감 : 매도 신호&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-28.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;개선된 로직과 UI&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// 대충 이런 느낌 &lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;골든크로스발생&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;MACD&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;SIGNAL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// 매수 신호 &lt;/span&gt;
+
+  &lt;span class=&quot;c1&quot;&gt;// 이 부분에서 무수히 많은 로직 변경  &lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;rsi15&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;마지막거래&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;판매가격&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;currentTicker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;closePrice&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;buy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;골든크로스발생&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;MACD&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;SIGNAL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// 매도 신호&lt;/span&gt;
+
+  &lt;span class=&quot;c1&quot;&gt;// 이 부분에서 무수히 많은 로직 변경&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;rsi15&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;70&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;마지막거래&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;구매가격&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;currentTicker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;closePrice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;sell&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;실행해보자.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;video src=&quot;/assets/images/2022-07/hoho/asset-29.mp4&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; controls=&quot;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;파란색 영역 : 가격, 검은색 점선 : MACD, 초록색 점선 : SIGNAL&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;가격이 지속적으로 하락하다가 중간에 잠시 반등 하는데 이 반등에 속지 않고 정확한 지하실을 감지하고 매수해버렸다.&lt;/p&gt;
+
+&lt;p&gt;이거 혹시 내가 욕망으로 타락 해버린 인류를 구할 백신을 개발해 버린것은 아닐까?&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-30.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;라는 설레발도 잠시&lt;/p&gt;
+
+&lt;p&gt;지속적으로 모니터링 해본 결과 나의 MACD가 역사에 큰 획을 그을 정도로 쿨한 것은 아니었다.&lt;/p&gt;
+
+&lt;p&gt;매년 발표되는 탈모 치료제 정도의 포지션이랄까&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;출생 후 생성 멈춘 ‘모낭세포’ 원인 규명..모낭재생 길 열었다 &lt;a href=&quot;https://news.v.daum.net/v/20220707144049827&quot;&gt;기사&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-31.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;횡보 시 크로스가 많이 발생하며 정확도가 떨어진다.&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;여기까지가 2018년 1월 15일 첫 API 호출 성공으로부터 1월 25일 MACD 구현까지 막힘없이 달려온 열흘간의 이야기이다.  (이후 동맥경화 상태로 수개월 지속)&lt;/p&gt;
+
+&lt;h3 id=&quot;keep-4&quot;&gt;KEEP&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;기존 RSI의 문제를 극복하기 위해 MACD를 추가적으로 구현&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;problem-4&quot;&gt;PROBLEM&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;서버 재가동 시 데이터 수집에 많은 시간이 소모
+    &lt;ul&gt;
+      &lt;li&gt;MACD 특성상 과거 계산 값들이 누적 합산 되기 때문에 API 장애, 뇌절 코드 배포 되었을때 치명상&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;낮은 코드 품질
+    &lt;ul&gt;
+      &lt;li&gt;퇴근 후 에너지 레벨이 낮은 상태로 코딩 강행 → 배포 → 설잠 자며 모니터링 → 출근 (반복)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;MACD 횡보 시 낮은 정확도&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;try-4&quot;&gt;TRY&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;모든 사회 활동을 중단하고 무인도에서 3개월 정도 생활하며 All New RichKimchiMan을 만든다. (전기, 인터넷은 그때 가서 고민)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;만약 이때 TRY 했더라면…
+거대 거품으로 부터 인류를 구한 지구-1999999의 나를 상상하며…&lt;/p&gt;
+
+&lt;p&gt;수개월간 고군분투 했지만 계속된 하락으로 자산이 -90%가 되었을때, 조용히 덮어두고 더욱 열심히 현실의 나를 살기로 했다.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-32.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;최종진화 : 한번에 n개씩 조회, 계산하며 유리한 항목으로 스왑&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ps&quot;&gt;P.S.&lt;/h2&gt;
+
+&lt;h3 id=&quot;macd-구현-후-약-한달-뒤&quot;&gt;MACD 구현 후 약 한달 뒤&lt;/h3&gt;
+
+&lt;p&gt;2018년 2월 24일 ~ 3월 19일 간의 기록&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-33.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;2월 24일 매수 : 0.4387개&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-34.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;3월 19일 매도 : 0.5개&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;하락장에서 2월24일 0.4387개의 코인을 매수, 3월19일 04:10 기준 0.5개 → 약 한달 동안 눈덩이를 열심히 굴려 약 15%의 코인을 증가시킬 수 있었다.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-35.png&quot; alt=&quot;&quot; style=&quot;max-width: 300px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;영차 영차&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;RichKimchiMan은 충실하게 매매를 반복하며 작지만 소듕한 눈덩이를 굴리고 있었던것.&lt;/p&gt;
+
+&lt;p&gt;하지만 나약한 휴먼은 가혹한 하락장을 견디지 못하고 떠나고 말았다는 슬픈 이야기&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-36.png&quot; alt=&quot;&quot; style=&quot;max-width: 300px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;뀨...&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-37.png&quot; alt=&quot;&quot; style=&quot;max-width: 300px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;#지옥의3월차트&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;이후에 틈틈이 All New RichKimchiMan 개발을 시도 했지만 바쁜 회사 생활로 아이디어가 없다는 핑계로 미뤄지기 일쑤였다.&lt;/p&gt;
+
+&lt;p&gt;그러던 2022년 2월 비교적 최근&lt;/p&gt;
+
+&lt;p&gt;다달이 요금만 빠져 나가던 EC2 인스턴스를 3년만에 삭제했다. (퉤 : 침 뱉는 소리)&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-38.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;그래서 내가 이대로 포기했냐고?&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;</content><author><name>HanaTour</name><email>15771233@hanatour.com</email></author></entry><entry><title type="html">JAVA DTO 를 Inner Class 를 향한 고민</title><link href="http://localhost:4000/2022/06/24/dto-inner-class/" rel="alternate" type="text/html" title="JAVA DTO 를 Inner Class 를 향한 고민" /><published>2022-06-24T00:00:00+09:00</published><updated>2022-06-24T00:00:00+09:00</updated><id>http://localhost:4000/2022/06/24/dto-inner-class</id><content type="html" xml:base="http://localhost:4000/2022/06/24/dto-inner-class/">&lt;blockquote&gt;
+  &lt;p&gt;DTO.. 어느 개발자는 DTO class 가 너무 많고.. 어느 개발자는 너무 inner class 를 사용해서 추적이 어려워요ㅜㅜ&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;어떤-얘기가-나왔는가&quot;&gt;어떤 얘기가 나왔는가?&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;기능은 달라도 DTO 컬럼이 같다면 하나로 통일해야하는가?&lt;/li&gt;
+  &lt;li&gt;기능이 다르니 DTO 컬럼이 같더라도 나누어야하는가?&lt;/li&gt;
+  &lt;li&gt;DTO 생성은 inner class 를 사용해야하나요??&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;이러한-고민을-하게된-이유&quot;&gt;이러한 고민을 하게된 이유..&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;초반 컨셉 이후 본인이 개발해둔 기능이 점점 커진다고 쳤을 때, 기능이 커질 수록 DTO 의 크기도 커질 수 있다고 생각합니다. 또 무분별한 DTO 생성으로 인해
+request, response dto 를 생성하면서 클래스 명이 계속 중복되는 부분이 많고, DTO 도 점점 많아지게 되면서, 혼란스러운 상황에 잘못된 DTO 를 생성해서 개발이 진행될 수도 있습니다.
+추상적으로 하나의 DTO 로 모든 걸 처리하려할때, 어떤 항목은 사용하지않고, 어떤 항목은 변수명만으로 어떤 기능을 하는지 추측하기 어렵고, 파악하기 힘듭니다. 
+이런 문제점들이 혼란을 줄 수 있습니다.
+(주고 있고, 저도 실수했습니다. 실수로 인해 개발 일정 못맞출 뻔 했습니다.)&lt;/li&gt;
+  &lt;li&gt;어떤 개발자는 inner class 로 DTO 관리 하라고 조언하고, 어떤 개발자는 기능별로 나눠서 관리하라고 조언해서 제가 앞으로 개발할 때 혼동이 왔습니다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;엥-그러면-무조건-dto-생성은-inner-class-를-사용해야하나요&quot;&gt;엥 그러면 무조건 DTO 생성은 inner class 를 사용해야하나요??&lt;/h2&gt;
+&lt;p&gt;(=DTO.. inner class 로 관리해야해? 아니면 기능마다 DTO 생성해서 관리해야해 ??)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/107032371/175870104-acc142ab-f072-4d46-9949-3687b7d16737.gif&quot; alt=&quot;_20210608142803_절레절레&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;아뇨.. 개발에 있어서 무조건과 무지성은 정말 안된다고 생각합니다..
+inner class 로 만들려는 목적이 도메인 관리를 위한 거라면 차라리 패키지를 명확하게 구분하는게 더 낫다고 생각합니다
+처음에는 관리가 편할것 같은데 &lt;strong&gt;Create, Update, Delete, Select&lt;/strong&gt; 등등 여러 목적으로 계속 생기면 DTO 모델 클래스 내 내용이 복잡해집니다.
+그럼 차라리 Inner class 보다는 아래 예같이 패키지는 나누는 것이 운영에 더 낫다고 생각 됩니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img width=&quot;814&quot; alt=&quot;KakaoTalk_Image_2022-06-23-18-53-21&quot; src=&quot;https://user-images.githubusercontent.com/107032371/175271885-dbdd934a-56cf-48ae-8429-c96b73ad7f50.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;흠-그럼-왜-dto-는-inner-class-로-사용하라고-고집부린건데요&quot;&gt;흠… 그럼 왜 DTO 는 inner class 로 사용하라고 고집부린건데요;&lt;/h2&gt;
+&lt;p&gt;🤔 전 그래서 주로 Resttemplate 로 외부 API 의 Request, Response DTO 를 맞추는데 사용합니다.
+도메인 관리에 비해 단순히 목적 하나. 양식에 맞게 호출하고, 양식에 맞게 응답 받기위해 생성하는 거라
+아무리 많이 생성하더라도 클래스 내 내용이 복잡해질 일은 없다고 생각합니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;실제로-사용한-예시&quot;&gt;실제로 사용한 예시&lt;/h2&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;@Getter&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@NoArgsConstructor&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;@AllArgsConstructor&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ResponseDTO&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;logKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Data&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@Getter&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@NoArgsConstructor&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;orderNo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Detail&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;detailList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ResponseObject&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;responseObject&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@Getter&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@NoArgsConstructor&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Detail&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>HanaTour</name><email>15771233@hanatour.com</email></author><category term="blog" /><category term="java" /><summary type="html">DTO.. 어느 개발자는 DTO class 가 너무 많고.. 어느 개발자는 너무 inner class 를 사용해서 추적이 어려워요ㅜㅜ</summary></entry><entry><title type="html">Hanatour 기술블로그 셋팅</title><link href="http://localhost:4000/2022/03/20/intelli-j-%ED%8C%8C%EC%9D%BC-%EC%A0%80%EC%9E%A5%EC%8B%9C-reformat-imports-%EC%A0%95%EB%A6%AC/" rel="alternate" type="text/html" title="Hanatour 기술블로그 셋팅" /><published>2022-03-20T00:00:00+09:00</published><updated>2022-03-20T00:00:00+09:00</updated><id>http://localhost:4000/2022/03/20/intelli-j-%ED%8C%8C%EC%9D%BC-%EC%A0%80%EC%9E%A5%EC%8B%9C-reformat-imports-%EC%A0%95%EB%A6%AC</id><content type="html" xml:base="http://localhost:4000/2022/03/20/intelli-j-%ED%8C%8C%EC%9D%BC-%EC%A0%80%EC%9E%A5%EC%8B%9C-reformat-imports-%EC%A0%95%EB%A6%AC/">&lt;blockquote&gt;
   &lt;p&gt;zekill(지킬) 로 github.io 기술블로그 셋팅&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -20,4 +886,247 @@
   &lt;li&gt;해당 설정은 각 Project 별로 설정 해야 한다.&lt;/li&gt;
   &lt;li&gt;변경 라인만 Reformat 하면 나중에 리뷰 할때 덜 당황한다.&lt;/li&gt;
   &lt;li&gt;참고로 사용하지 않는 Imports는 자바의 경우 나중에 컴파일 할 때 오류가 발생할수 있으니 미리미리 정리 해주는게 좋다.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>HanaTour</name><email>15771233@hanatour.com</email></author><category term="blog" /><category term="setting" /><summary type="html">zekill(지킬) 로 github.io 기술블로그 셋팅</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>HanaTour</name><email>15771233@hanatour.com</email></author><category term="blog" /><category term="setting" /><summary type="html">zekill(지킬) 로 github.io 기술블로그 셋팅</summary></entry><entry><title type="html">프로젝트 표준화 여정 #1 이름에 진심인 편</title><link href="http://localhost:4000/2020/06/20/%ED%99%8D%EC%9D%80%EC%8B%A4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%91%9C%EC%A4%80%ED%99%94-%EC%97%AC%EC%A0%95-1/" rel="alternate" type="text/html" title="프로젝트 표준화 여정 #1 이름에 진심인 편" /><published>2020-06-20T00:00:00+09:00</published><updated>2020-06-20T00:00:00+09:00</updated><id>http://localhost:4000/2020/06/20/%ED%99%8D%EC%9D%80%EC%8B%A4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%91%9C%EC%A4%80%ED%99%94-%EC%97%AC%EC%A0%95-#1</id><content type="html" xml:base="http://localhost:4000/2020/06/20/%ED%99%8D%EC%9D%80%EC%8B%A4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%91%9C%EC%A4%80%ED%99%94-%EC%97%AC%EC%A0%95-1/">&lt;p&gt;안녕하세요 :)&lt;/p&gt;
+
+&lt;p&gt;하나투어 IT본부에서 온라인서비스랩 온라인서비스개발팀 코어파트 &lt;em&gt;&lt;del&gt;헉헉&lt;/del&gt;&lt;/em&gt; 에서 
+백엔드 개발을 맡고 있는 &lt;strong&gt;홍은실&lt;/strong&gt;입니다. 
+하나투어 공식 개발 블로그를 만들자고 수 개월 동안 랩장님을 들들 볶은 공로로
+첫 필진 그룹으로 선정되었습니다.&lt;/p&gt;
+
+&lt;p&gt;너-무 영광이네요. &lt;del&gt;랩장님.. 랩장님??&lt;/del&gt;&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-06/shiry/happy-but-sad.jpg&quot; alt=&quot;&quot; style=&quot;width: 70%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.7em;&quot;&gt;랩장님, 다시 한 번 말씀 해 보시겠어요..?&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;서론&quot;&gt;서론&lt;/h2&gt;
+
+&lt;p&gt;올 초, 제가 소속된 코어파트에서는 레거시 서비스 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ICE&lt;/code&gt; 를 새 프로젝트 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DCR&lt;/code&gt; 로 옮기는 대장정의 첫 걸음을 내딛게 되었습니다.
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DCR&lt;/code&gt; 을 시작할 때, 우리는 일부 비즈니스 이전과 프로젝트 표준화 작업을 한꺼번에 진행해야 했습니다.&lt;/p&gt;
+
+&lt;p&gt;프로젝트를 표준화 하려는 목적은 여러가지가 있지만 “&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DCR&lt;/code&gt; 이 레거시가 되는 시기를 늦추자” 가 제일 컸던 것 같아요.&lt;/p&gt;
+
+&lt;p&gt;그 목적을 이루기 위해, 우리는 여러 원칙을 세우기로 했고, 가장 처음으로 논의된 것이 “좋은 이름 짓기” 였습니다.&lt;/p&gt;
+
+&lt;p&gt;우리는 서로에게 질문했습니다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;어떤 이름이 좋은 이름인가?&lt;/li&gt;
+  &lt;li&gt;좋은 이름을 짓기 위해, 무엇을 고려해야 하는가?&lt;/li&gt;
+  &lt;li&gt;좋은 이름이 가져오는 이점은 무엇인가?&lt;/li&gt;
+  &lt;li&gt;반대로, 좋지 않은 이름이 일으키는 문제점은 무엇인가?&lt;/li&gt;
+  &lt;li&gt;등등 ..&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;저 질문들에 대한 온전한 답을 아직도 내리지 못했지만, &lt;strong&gt;약간의 실마리&lt;/strong&gt;를 얻을 수 있었습니다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;좋은 이름은, 그 의도/의미가 명확해야 한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;명확함은 질문을 줄이고, 도메인/비즈니스를 드러내며, 코드 읽는 것을 쉽게 합니다. &lt;del&gt;그리고 빠른 퇴근을 보장합니다.&lt;/del&gt;
+우리는 이런 기준을 가지고 각종 클래스/메소드/변수 등의 이름을 짓기 위해 노력 해 왔고, 여전히 하고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;그 고민의 일부를 소개합니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;공용-클래스의-이름&quot;&gt;공용 클래스의 이름&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DCR&lt;/code&gt; 프로젝트 초반에, 우리는 비즈니스 구현에 도움이 될 다양한 공용 클래스들을 생성하게 되었습니다.
+이것은 자연스럽게 “공용 클래스의 이름을 어떻게 지어야 하나?” 하는 고민을 불러왔는데요.
+단순히 “역할에 맞는 적합한 이름이 무엇인가” 뿐만이 아니라,
+&lt;em&gt;“이 클래스들을 만든 주체가 스프링/자바인지 우리 동료인지 혼란스러워서는 안된다.”&lt;/em&gt; 라는 것 때문이었습니다.&lt;/p&gt;
+
+&lt;p&gt;그런 혼란스러움을 피하기 위해, 우리는 아래 기준을 만족하는 prefix 를 결정하기로 했습니다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;동료들이 만들었다는 것을 명시적으로 알려야 한다&lt;/li&gt;
+  &lt;li&gt;너무 길면 안된다&lt;/li&gt;
+  &lt;li&gt;자주 변경되지 않아야 한다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;논의 끝에, 우리는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hnt-&lt;/code&gt; 를 prefix 로 사용하기로 했습니다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dcr-&lt;/code&gt; 과 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hnt-&lt;/code&gt; 가 막판에 접전을 벌였으나,&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;프로젝트 이름이 변경되면 DCR 이라는 단어는 그 자체로 레거시가 된다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;는 주장에 만장일치로 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hnt-&lt;/code&gt; 로 결정하게 되었습니다. 회사 이름의 축약어이기도 하니 제법 적절한 prefix 인 것 같아요.&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-06/shiry/hnt-from.png&quot; alt=&quot;&quot; style=&quot;width: 60%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.7em;&quot;&gt;Hnt의 정체&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;dto-클래스의-이름&quot;&gt;DTO 클래스의 이름&lt;/h2&gt;
+
+&lt;p&gt;이 부분은 아직 100% 확정되지 않은 상태입니다.
+다만, 어떤 고민을 했는지 소개하면 좋을 것 같아 들고 왔습니다.
+Java 커뮤니티에서도 흥하는 주제이기도 하고요.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DTO 의 주인은 누구인가?&lt;/strong&gt; 라는 질문에 대한 답변이 갈렸기 때문에, 꽤 오랜 토론에도 의견이 좁혀지지 않았습니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;controller-가-dto-의-주인&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Controller&lt;/code&gt; 가 DTO 의 주인&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;controller 와 service 의 역할은 엄연히 다르다&lt;/li&gt;
+  &lt;li&gt;controller 는 client 로부터 받은 데이터를 적절히 가공해서 service 에 넘겨줄 책임이 있다&lt;/li&gt;
+  &lt;li&gt;service 가 controller 에서 사용되는 클래스에 대한 의존성을 가져서는 안된다&lt;/li&gt;
+  &lt;li&gt;따라서 controller 에서 사용하는 DTO 와 service 에서 사용하는 DTO 는 분리되어야 한다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;service-가-dto-의-주인&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Service&lt;/code&gt; 가 DTO 의 주인&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;controller 에서 데이터를 service 에 넘겨주기 전에 비즈니스 처리를 하는 케이스가 거의 없다
+    &lt;ul&gt;
+      &lt;li&gt;대부분의 경우에 controller 에서 바로 service 에 데이터를 넘겨준다&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;위와 같은 이유로, service 에 데이터를 넘기기 전에 매번 새로운 객체로 변환하는 것은 생산성이 떨어진다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;결국 절충안으로 어정쩡한 (..) 결론이 났습니다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DCR&lt;/code&gt; 로 처음 옮기기로 한 비즈니스의 특성상,
+controller 에서 service 로 데이터를 가공해서 넘겨줄 일이 아예 없었거든요.&lt;/p&gt;
+
+&lt;p&gt;일단 아래 내용으로 진행하고, 추후에 복잡한 비즈니스가 들어오면 한번 더 논의하기로 했습니다.&lt;/p&gt;
+
+&lt;h4 id=&quot;service-가-dto-의-주인-1&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Service&lt;/code&gt; 가 DTO 의 주인&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;단, controller 에서 특별한 처리가 필요한 경우, controller &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-Req&lt;/code&gt; 로 받은 후, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-Dto&lt;/code&gt; 로 변환하여 service 에 넘겨준다&lt;/li&gt;
+  &lt;li&gt;controller 에서 별다른 처리를 하지 않으면, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-Dto&lt;/code&gt; 로 받아서 service 에 그대로 넘긴다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;축약어-금지&quot;&gt;축약어 금————지&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ICE&lt;/code&gt; 를 벗어나려는 이유에는 많은 것들이 있지만, &lt;strong&gt;추측할 수 없는 축약어&lt;/strong&gt;도 한몫 하는 것 같습니다.
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ICE&lt;/code&gt; 에서 실제 사용중인 축약어를 한번 알아 볼까요?&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rprs
+rppr
+cntnt
+trnc
+strt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div style=&quot;text-align: center; padding: 50px 0;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-06/shiry/let-me-see.jpg&quot; alt=&quot;&quot; style=&quot;width: 60%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.7em;&quot;&gt;내가 지금 뭘 본거지...?&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;음 … 그만 알아봅시다 …&lt;/p&gt;
+
+&lt;p&gt;위 축약어들이 원래 어떤 단어였는지 유추 가능하신가요? &lt;em&gt;혹시 이건가..?&lt;/em&gt; 싶은 것도 있지만, 
+&lt;em&gt;‘저게 대체 뭐야?’&lt;/em&gt; 라는 생각이 드는 것도 있을 거에요. (실제로는 후자가 압도적으로 많습니다.)&lt;/p&gt;
+
+&lt;p&gt;처음에 말했던 것 처럼, 우리는 “의도가 모호한 것” 을 배제하기로 했기 때문에, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DCR&lt;/code&gt; 에서 축약어를 금지시켰습니다.&lt;/p&gt;
+
+&lt;p&gt;아! 물론 예외는 있습니다. 언제나, 모든 곳에는 예외 조항이 있기 마련이죠.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;관례적으로 사용하는 것
+    &lt;ul&gt;
+      &lt;li&gt;api, bg (background), url/uri, dto&lt;/li&gt;
+      &lt;li&gt;for 문 내에서 사용하는 i, j, k&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hnt-&lt;/code&gt; prefix&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;업계 용어로 사용되는 축약어
+    &lt;ul&gt;
+      &lt;li&gt;fit (Foreign Independent Tour or Travel)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;기타-소소한-컨벤션&quot;&gt;기타 소소한 컨벤션&lt;/h2&gt;
+
+&lt;p&gt;“규칙을 정하는 것” 은 중요합니다. 괜히 팀에서 “코딩 컨벤션” 을 정하는 것이 아닙니다.&lt;/p&gt;
+
+&lt;p&gt;우리는 일반적으로 사용되는 컨벤션을 채택했습니다.&lt;/p&gt;
+
+&lt;h4 id=&quot;pascalcase&quot;&gt;PascalCase&lt;/h4&gt;
+
+&lt;p&gt;class, interface, annotation 등의 이름&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HntUtil&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt;
+
+&lt;span class=&quot;nd&quot;&gt;@Entity&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ExhibitComponent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;camelcase&quot;&gt;camelCase&lt;/h4&gt;
+
+&lt;p&gt;메소드, 변수 이름&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;orderNumber&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;doSomething&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;snake_case&quot;&gt;snake_case&lt;/h4&gt;
+
+&lt;p&gt;테이블, 컬럼&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;exhibit_component.exhibit_component_id
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;upper_case_with_snake_case&quot;&gt;UPPER_CASE_WITH_SNAKE_CASE&lt;/h4&gt;
+
+&lt;p&gt;상수 (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;final static&lt;/code&gt;, enum)&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;enum&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DisplayStatus&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;no&quot;&gt;SHOW&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;HIDDEN&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HntUtil&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;SOME_CONSTANT_VALIABLE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;hello, world!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;kebob-case&quot;&gt;kebob-case&lt;/h4&gt;
+
+&lt;p&gt;front component 이름, uri path&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;product-type-a-grid.vue
+/exhibit/recommended-exhibition-list
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;에피소드---vue-컴포넌트-이름-전하기&quot;&gt;에피소드 - vue 컴포넌트 이름 전하기&lt;/h2&gt;
+
+&lt;p&gt;“좋은 이름을 짓기 위해 했던 고민들” 에 대해 이런 저런 썰을 풀어 보았습니다. 
+위에 이야기한 것들은 “공통된 룰을 정하는 과정” 에 좀 더 가까운 것 같기도 해요. 
+마지막으로, “실제 코드에서 사용할 이름을 정하는 과정” 중에 있었던 소소한 대화를 소개해 볼까 합니다.&lt;/p&gt;
+
+&lt;p&gt;저와 동료들이, 실제 코드에서 사용될 이름을 짓기 위해 어떤 고민을/어떤 관점에서 나누는지가 보실 수 있어요 !&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;이렇게 생긴 컴포넌트는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-list&lt;/code&gt; 입니까 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-grid&lt;/code&gt; 입니까 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-stack&lt;/code&gt; 입니까 ?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;가로로 늘어진 것을 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-horizontal-stack&lt;/code&gt; 이라고 할까요, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-inline-list&lt;/code&gt; 라고 할까요?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;🧑🏻 : 이렇게 생긴 컴포넌트는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;product-thumbnail-grid&lt;/code&gt; 입니까?&lt;/p&gt;
+
+  &lt;p&gt;🤡 : 하지만 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;thumbnail&lt;/code&gt; 은 다른 컴포넌트 유형을 지칭하는데요 ?&lt;/p&gt;
+
+  &lt;p&gt;🐣 : 그렇다면 그냥 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;product-type-a-grid&lt;/code&gt; 는 어떻습니까 ?&lt;/p&gt;
+
+  &lt;p&gt;🤡 : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;type-a&lt;/code&gt; .. 요 ? &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;typeA&lt;/code&gt; ? &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;type-a&lt;/code&gt;?&lt;/p&gt;
+
+  &lt;p&gt;🐣 : &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;type-a&lt;/code&gt;. 어차피 저렇게 생긴 것을 유니크하게 부를 수 있는 단어는 없지 않습니까 …&lt;/p&gt;
+
+  &lt;p&gt;🧑🏻 : 그것도 그렇군요 ; 많아봤자 3~4 가지 유형일테니 …&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;del&gt;쓸데없이&lt;/del&gt; 긴 글 읽어 주셔서 감사합니다 :D&lt;/p&gt;
+
+&lt;p&gt;“프로젝트 표준화 여정” 에 대한 글은 이후에 몇편 더 올라갈 예정이에요.
+이 글을 포함해서 이후에 올라갈 글들이, 우리와 비슷한 고민을 하고 있을 누군가에게 작은 가이드가 되었으면 좋겠습니다.&lt;/p&gt;</content><author><name>HanaTour</name><email>15771233@hanatour.com</email></author><category term="blog" /><category term="setting" /><summary type="html">안녕하세요 :)</summary></entry></feed>
