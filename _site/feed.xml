@@ -1,4 +1,748 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-08T18:51:56+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">하나투어 기술블로그</title><subtitle></subtitle><author><name>HanaTour</name><email>15771233@hanatour.com</email></author><entry><title type="html"></title><link href="http://localhost:4000/2022/07/08/2022-07-08-%EB%B2%BD%EB%8A%90%EB%82%80-%EC%8D%B0%ED%91%BC%EB%8B%A4-1/" rel="alternate" type="text/html" title="" /><published>2022-07-08T18:51:56+09:00</published><updated>2022-07-08T18:51:56+09:00</updated><id>http://localhost:4000/2022/07/08/2022-07-08-%EB%B2%BD%EB%8A%90%EB%82%80-%EC%8D%B0%ED%91%BC%EB%8B%A4#1</id><content type="html" xml:base="http://localhost:4000/2022/07/08/2022-07-08-%EB%B2%BD%EB%8A%90%EB%82%80-%EC%8D%B0%ED%91%BC%EB%8B%A4-1/">&lt;p&gt;내가 몸담고 있는 하나투어는 프로젝트가 종료될때마다 구성원들이 모여 회고를 진행합니다. 서로 좋았던 점, 개선해야 할 점 등을 공유하고 발전을 도모하는 좋은 문화입니다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-13T12:54:55+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">하나투어 기술블로그</title><subtitle></subtitle><author><name>HanaTour</name><email>15771233@hanatour.com</email></author><entry><title type="html">Nuxt3 맛보기 #1</title><link href="http://localhost:4000/2022/07/12/%EB%84%89%EC%8A%A4%ED%8A%B8-%EB%A7%9B%EB%B3%B4%EA%B8%B0-1/" rel="alternate" type="text/html" title="Nuxt3 맛보기 #1" /><published>2022-07-12T00:00:00+09:00</published><updated>2022-07-12T00:00:00+09:00</updated><id>http://localhost:4000/2022/07/12/%EB%84%89%EC%8A%A4%ED%8A%B8-%EB%A7%9B%EB%B3%B4%EA%B8%B0#1</id><content type="html" xml:base="http://localhost:4000/2022/07/12/%EB%84%89%EC%8A%A4%ED%8A%B8-%EB%A7%9B%EB%B3%B4%EA%B8%B0-1/">&lt;p&gt;안녕하세요! 하나투어 버티컬서비스개발팀의 프론트엔드 개발자 이영우 입니다. 🙌&lt;/p&gt;
+
+&lt;p&gt;버티컬서비스개발팀에서는, 사용자들이 흥미를 가질만한 새로운 서비스들을 개발하고 있습니다. &lt;br /&gt;
+(팀 이름부터 느낌이 오시죠? ㅎㅎ)&lt;/p&gt;
+
+&lt;p&gt;덕분에 팀 내 개발자들은 새로운 프로젝트를 접할 일이 많은데요, &lt;br /&gt;
+여러분들은 새로운 프로젝트를 만들 때, 어떤 것이 가장 고민되시나요? &lt;br /&gt;
+기획, 일정, 등등… 고민되는 게 많을 거라 예상이 되네요!&lt;/p&gt;
+
+&lt;p&gt;저는 그 중에서, 기술이 가장 고민됩니다.&lt;/p&gt;
+
+&lt;p&gt;이번에 새로운 프로젝트에 참여하게 되어, 어떤 기술을 선택해야 할지 고민이 많았습니다.&lt;/p&gt;
+
+&lt;p&gt;그러던 중… Nuxt3 가 새로 나온다는 사실이 눈에 띄었습니다!&lt;/p&gt;
+
+&lt;p&gt;“Nuxt3 를 새로운 프로젝트에서 사용할 수 있을까?” 고민을 하다가… “그럼 먼저 삽질을 해 보자!” 라는 생각이 들었습니다.&lt;/p&gt;
+
+&lt;p&gt;이 글은, 그 삽질기의 한 부분을 담았습니다. 🙂&lt;/p&gt;
+
+&lt;p&gt;그럼 시작하겠습니다!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;들어가기 전에… 주의 사항을 알려 드리겠습니다.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;아래 글은 Nuxt3 베타 버전, Vuetify3 알파 버전이 나왔을 때 작성한 글이라, 싱크가 맞지 않을 수 있습니다. &lt;br /&gt;
+(각각 RC 버전, 베타 버전이 나왔습니다!)&lt;/li&gt;
+  &lt;li&gt;저의 주관적인 생각이 많이 들어가있습니다. &lt;br /&gt;
+의견이 다를 경우, 여러분들의 생각을 댓글로 남겨 주세요! &lt;br /&gt;
+&lt;strong&gt;하나투어에서는 기술 토론을 환영합니다!&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;프로젝트-생성하기&quot;&gt;프로젝트 생성하기&lt;/h1&gt;
+
+&lt;h3 id=&quot;대망의-nuxt3-프로젝트를-생성한-후-실행해-봅시다&quot;&gt;대망의 nuxt3 프로젝트를 생성한 후 실행해 봅시다!&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npx nuxi init [플젝 이름]&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yarn install&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yarn dev&lt;/code&gt; → 실행&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;테스트-페이지를-추가해-봅시다&quot;&gt;테스트 페이지를 추가해 봅시다!&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;pages 디렉토리를 생성한다.&lt;/li&gt;
+  &lt;li&gt;pages 하위에 index.vue 를 추가한다.&lt;/li&gt;
+  &lt;li&gt;app.vue 를 아래처럼 수정한다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;NuxtPage&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;그럼 라우팅이 되는 것을 확인할 수 있습니다!!! 👍&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;레이아웃이 여러개일 경우에는 layouts라는 디렉토리를 만들어 그 안에서 지지고 볶고 하면 됩니다. (Nuxt2 와 방식이 똑같아요!)&lt;br /&gt;&lt;/em&gt;
+&lt;em&gt;하지만 요 글은 맛보기이니 레이아웃 따로 없이 app.vue 안에서 하겠습니다. ㅎㅎ&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;ui-framework-붙이기&quot;&gt;UI Framework 붙이기&lt;/h1&gt;
+
+&lt;p&gt;아무리 css 를 잘 한다 하더라도, UI 프레임워크의 도움이 필요한 부분이 있습니다.
+그리하여, 맛보기라 하더라도 UI 프레임워크를 붙여 보고자 하였는데요!&lt;/p&gt;
+
+&lt;p&gt;저는 기존에 Vuetify를 많이 사용했기 때문에, Vuetify3 에서 Vue3를 지원해 주는지 찾아 보았습니다.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+    &lt;img src=&quot;/assets/images/2022-07/ywlee/keyboard.gif&quot; alt=&quot;&quot; style=&quot;width: 50%;&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;a href=&quot;https://next.vuetifyjs.com/en/getting-started/installation/&quot;&gt;Get started with Vuetify 3 Beta&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Vuetify3 에서 Vue3를 지원한다는 소식을 발견하였습니다!! 👏👏&lt;/p&gt;
+
+&lt;p&gt;삽질기를 만들 당시에는 알파 버전이었으나, 현재 베타 버전이 나왔네요! ☺️&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+    &lt;img src=&quot;/assets/images/2022-07/ywlee/thumbs.png&quot; alt=&quot;&quot; style=&quot;width: 30%;&quot; /&gt;
+    &lt;figcaption align=&quot;center&quot;&gt;&lt;b&gt;열심히 일하는 뷰티파이 넘모 좋구욤..&lt;/b&gt;&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Vuetify3 를 붙여 보겠습니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;vuetify3-추가하기&quot;&gt;Vuetify3 추가하기&lt;/h3&gt;
+
+&lt;p&gt;문서 내에서 열심히 찾아 보았지만, Vuetify3 + Nuxt3 관련한 내용이 없었습니다.&lt;/p&gt;
+
+&lt;p&gt;😂: 저기… Nuxt3 지원해 준다면서요? ㅎ;; &lt;br /&gt;
+😕: ? Vue3 지원한다고 했지 Nuxt3 지원한다곤 안 했는데요?&lt;/p&gt;
+
+&lt;p&gt;그냥 포기할까 하였지만… 뷰티파이의 편리함을 버릴 수 없기에, 억지로 넣어 주는 방법을 찾아 보았습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/nuxt/framework/discussions/1183&quot;&gt;how to use vuetify 3 alpha in new nuxt 3 · Discussion #1183 · nuxt/framework&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;위 글을 참고하였습니다.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yarn add vuetify@3.0.0-alpha.12&lt;/code&gt; → Vuetify3 알파 버전 설치하기&lt;/li&gt;
+  &lt;li&gt;Vuetify.js 파일을 만들기 (내용은 위 깃허브 링크를 참고해 주세요.)&lt;/li&gt;
+  &lt;li&gt;nuxt.config.js 에 vuetify 추가하기&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;실행은 되는데… 아래처럼 에러가 발생합니다.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+    &lt;img src=&quot;/assets/images/2022-07/ywlee/error.png&quot; alt=&quot;&quot; style=&quot;width: 70%;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;아… 이만 마치겠습니다&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+    &lt;img src=&quot;/assets/images/2022-07/ywlee/cafebene.png&quot; alt=&quot;&quot; style=&quot;width: 70%;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;농담이고요,&lt;/p&gt;
+
+&lt;p&gt;여기서 포기한다면 개발자가 아니죠. (님이 뭔데요!)&lt;/p&gt;
+
+&lt;p&gt;에러 내용을 확인해 봅시다.&lt;/p&gt;
+
+&lt;h3 id=&quot;에러-확인하기&quot;&gt;에러 확인하기&lt;/h3&gt;
+
+&lt;p&gt;globals.mjs 파일에서 DEBUG 부분을 읽으며 뭔가 오류가 난 것 같네요!&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;node_modules/vuetify/lib/util/globals.mjs&lt;/code&gt; 에서 IS_DEBUG, IS_PROD 를 false 로 바꿔 줘 봅시다.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;IS_NODE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;process&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;undefined&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;IN_BROWSER&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;undefined&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;IS_DEBUG&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 이 부분&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;IS_PROD&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 이 부분&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;SUPPORTS_INTERSECTION&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;IN_BROWSER&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;IntersectionObserver&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;SUPPORTS_TOUCH&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;IN_BROWSER&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;ontouchstart&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;navigator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;maxTouchPoints&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;SUPPORTS_FOCUS_VISIBLE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;IN_BROWSER&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;CSS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;supports&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;selector(:focus-visible)&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;실행을 시키면, 잘 되는 것을 확인할 수 있습니다. ㅋㅋㅋ&lt;/p&gt;
+
+&lt;p&gt;하지만 요것은 문제가 있죠……&lt;/p&gt;
+
+&lt;p&gt;해당 파일은 빌드 파일이기 때문에, yarn install 이나 yarn add 를 할 때마다 내용이 바뀔 것이고,
+다른 라이브러리를 추가할 때마다 저 파일을 수정해 줘야 하는 귀찮음이 생기게 됩니다.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+    &lt;img src=&quot;/assets/images/2022-07/ywlee/jjal.png&quot; alt=&quot;&quot; style=&quot;width: 50%;&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;아래 시도들을 해 보았습니다.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;dev env를 추가해 주기
+    &lt;ul&gt;
+      &lt;li&gt;실패&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;package.json에 NODE_ENV를 development로 설정해 주기
+    &lt;ul&gt;
+      &lt;li&gt;실패&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;dotenv 라이브러리 설치해 주기
+    &lt;ul&gt;
+      &lt;li&gt;실패 ㅠㅠ&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;일단은 넘어가고, 해당 부분은 여러분들에게 맡기도록 하였습니다. (여러분: 네?)&lt;/p&gt;
+
+&lt;p&gt;mdi 가 뭔가요?? 하시는 분들은 &lt;a href=&quot;https://next.vuetifyjs.com/en/components/icons/#icons&quot;&gt;Icon component — Vuetify&lt;/a&gt; 페이지를 참고 부탁드립니다.&lt;/p&gt;
+
+&lt;p&gt;간단하게 말해서 icon 을 쉽게 사용할 수 있게 해 주는데요, &lt;br /&gt;
+구글링해서 png 다운 받고, 플젝에 넣고, 쿵짝쿵짝 할 필요가 없습니다. &lt;br /&gt;
+더불어 아이콘에 통일성도 생기게 되구요!&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yarn add @mdi/font&lt;/code&gt; 로 mdi/font 를 추가해 줍시다.&lt;/p&gt;
+
+&lt;p&gt;nuxt.config.js 를 아래처럼 변경해 주시구요,&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;defineNuxtConfig&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;nuxt3&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;defineNuxtConfig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;css&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;vuetify/lib/styles/main.sass&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;@mdi/font/css/materialdesignicons.css&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;transpile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;vuetify&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;템플릿에서 아래와 같이 사용하면!&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;template&amp;gt;&lt;/span&gt;
+  ...
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;v-btn&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;icon&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;v-icon&amp;gt;&lt;/span&gt;mdi-magnify&lt;span class=&quot;nt&quot;&gt;&amp;lt;/v-icon&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/v-btn&amp;gt;&lt;/span&gt;
+
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;v-btn&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;icon&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;v-icon&amp;gt;&lt;/span&gt;mdi-heart&lt;span class=&quot;nt&quot;&gt;&amp;lt;/v-icon&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/v-btn&amp;gt;&lt;/span&gt;
+  ...
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/template&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+    &lt;img src=&quot;/assets/images/2022-07/ywlee/icon.png&quot; alt=&quot;&quot; style=&quot;width: 30%;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;아이콘이 추가된 것을 확인할 수 있습니다.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+    &lt;img src=&quot;/assets/images/2022-07/ywlee/thumbs.png&quot; alt=&quot;&quot; style=&quot;width: 30%;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+참고사항: &lt;a href=&quot;https://materialdesignicons.com/&quot;&gt;Material Design Icons&lt;/a&gt; 요기 가서 마음에 드는 아이콘을 고른 후, v-icon 컴포넌트에 mdi- 프리픽스를 붙이면 됩니다&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;라이프사이클-훅-사용해-보기&quot;&gt;라이프사이클 훅 사용해 보기&lt;/h1&gt;
+
+&lt;p&gt;만약 mounted 단에 scroll 이벤트리스너를 등록해 준 후, destroy 단에서 삭제해 주고 싶다면 아래처럼 하면 됩니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;onMounted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;scroll&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onScroll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+
+    &lt;span class=&quot;nx&quot;&gt;onBeforeUnmount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;removeEventListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;scroll&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;drawer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;changeDrawerState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/script&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;mounted는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onMounted&lt;/code&gt; 로 사용해 주면 되고… beforeDestroy는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onBeforeUnmount&lt;/code&gt; 로 사용해 주면 됩니다.&lt;/p&gt;
+
+&lt;p&gt;참고사항: destroy 는 unmount 라는 용어로 바뀌었습니다. destroy 보다 더 알맞는 네이밍이라고 생각했다고 하네용.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Option api에서 사용하던 것들은 아래처럼 사용이 가능합니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;beforeCreate -&amp;gt; use setup()&lt;/li&gt;
+  &lt;li&gt;created -&amp;gt; use setup()&lt;/li&gt;
+  &lt;li&gt;beforeMount -&amp;gt; onBeforeMount&lt;/li&gt;
+  &lt;li&gt;mounted -&amp;gt; onMounted&lt;/li&gt;
+  &lt;li&gt;beforeUpdate -&amp;gt; onBeforeUpdate&lt;/li&gt;
+  &lt;li&gt;updated -&amp;gt; onUpdated&lt;/li&gt;
+  &lt;li&gt;beforeDestroy -&amp;gt; onBeforeUnmount&lt;/li&gt;
+  &lt;li&gt;destroyed -&amp;gt; onUnmounted&lt;/li&gt;
+  &lt;li&gt;errorCaptured -&amp;gt; onErrorCaptured&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;반응형-변수-만들어-보기&quot;&gt;반응형 변수 만들어 보기&lt;/h1&gt;
+
+&lt;p&gt;기존 Options api의 data와 같은… 양방향 바인딩을 어떻게 하면 되는 걸까요?&lt;/p&gt;
+
+&lt;p&gt;아래 문서를 봅시다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://v3.ko.vuejs.org/guide/reactivity-fundamentals.html#%E1%84%87%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B3%E1%86%BC%E1%84%92%E1%85%A7%E1%86%BC-%E1%84%89%E1%85%A1%E1%86%BC%E1%84%90%E1%85%A2-%E1%84%89%E1%85%A5%E1%86%AB%E1%84%8B%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5&quot;&gt;반응형(Reactivity) 기초 Vue.js&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;어렵다구요? 괜찮습니다. 우선 사용해 봅시다!&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;template&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;changeDrawerState&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;isShowDrawer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/v-layout&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/template&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;isShowDrawer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ref&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;changeDrawerState&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;isShowDrawer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;isShowDrawer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;isShowDrawer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;changeDrawerState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/script&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;컴포넌트 내부의 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;setup()&lt;/code&gt; 함수에서 초기화 부분을 선언합니다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;setup 내에서 this 사용이 안 됨! &lt;br /&gt;
+처음에는 ‘그 편하던 this를 왜 없애냐 -_- 했지만…&lt;br /&gt;
+composition api로 만들면 그것이 필요가 없다는 것을 알게 되었다.&lt;br /&gt;
+data 나 method 에 상관없이 this 를 사용했다 보니 this 남발이 되어 나중엔 정리가 안 됐는데, 이걸 생각한 걸까…&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;ref 안에 초기값을 넣어 주고, 해당 값을 사용할 변수에 넣어 준 뒤, return 해 주면 바로 템플릿에서 반응형 변수로 사용할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;ref를 이용하여 reactive한 변수를 생성했다면, 스크립트 내에서는 .value 를 써서 set과 get 둘 다 할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;ref 가 Nuxt 공식 문서에는 없으니, 도저히 모르겠다! 하는 부분은 최대한 Vue3 공식 문서를 참고하는 것을 추천 드립니다.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;기존-options-api-와-비교해-보자&quot;&gt;기존 Options API 와 비교해 보자&lt;/h3&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;template&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;changeDrawerState&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;isShowDrawer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/v-layout&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/template&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;isShowDrawer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;methods&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;changeDrawerState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;isShowDrawer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;isShowDrawer&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/script&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;흠… 아직은 Options api 가 더 깔끔해 보이는데, 컴포넌트의 크기가 커지면 다를 것이라 예상됩니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;외전-리액트와-비교해-보자&quot;&gt;외전) 리액트와 비교해 보자&lt;/h3&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useState&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Example&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;isShowDrawer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setIsShowDrawer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;changeDrawerState&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;setIsShowDrawer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;isShowDrawer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onClick&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;changeDrawerState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;white&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;isShowDrawer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;리액트는 useState를 사용하여 반응형 변수를 만듭니다.&lt;/p&gt;
+
+&lt;p&gt;Nuxt 의 Composition api 에서
+ref 를 사용하여 &lt;b&gt;이것들은 반응형 변수야!&lt;/b&gt; 라고 명시하는 것이
+useState 를 사용하여 상태관리를 하는 리액트스럽게 바뀌었다는 생각이 듭니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;변수-선언을-깔끔하게-하는-방법은-없을까&quot;&gt;변수 선언을 깔끔하게 하는 방법은 없을까&lt;/h1&gt;
+
+&lt;p&gt;ref, reactive 를 사용할 경우, 아래처럼 귀찮은 작업이 있습니다. (저만 귀찮을지도…?)&lt;/p&gt;
+
+&lt;p&gt;1)) ref를 이용하여 변수 만들어 주는 방법&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;template&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;username&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/template&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;signUp&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ref&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;username&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ref&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;password&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ref&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;favoriteGameList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ref&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([])&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;username&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;password&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;favoriteGameList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/script&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;return 에 모든 변수를 하나하나 넣어 줘야 하기 때문에 좀 귀찮습니다.&lt;/p&gt;
+
+&lt;p&gt;2)) reactive 이용하여 변수 만들어 주기&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;template&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;userData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;userData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;username&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/template&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;signUp&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;userData&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reactive&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;username&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;password&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;favoriteGameList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[],&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;userData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/script&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이건 또 템플릿에서 사용할 때 귀찮습니다.&lt;/p&gt;
+
+&lt;p&gt;열심히 찾아 보다가, 저랑 같은 생각을 한 개발자님이 계셨습니다!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://joshua1988.github.io/vue-camp/vue3.html#%E1%84%80%E1%85%B3%E1%84%85%E1%85%A2%E1%84%83%E1%85%A9-reactive%E1%84%80%E1%85%A1-%E1%84%8C%E1%85%A9%E1%86%B7-%E1%84%83%E1%85%A5-%E1%84%91%E1%85%A7%E1%86%AB%E1%84%92%E1%85%A1%E1%86%AF-%E1%84%80%E1%85%A5%E1%86%BA-%E1%84%80%E1%85%A1%E1%87%80%E1%84%8B%E1%85%B3%E1%86%AB%E1%84%83%E1%85%A6-%E1%84%8B%E1%85%A5%E1%84%84%E1%85%A5%E1%87%82%E1%84%80%E1%85%A6-%E1%84%87%E1%85%A1%E1%86%BC%E1%84%87%E1%85%A5%E1%86%B8%E1%84%8B%E1%85%B5-%E1%84%8B%E1%85%A5%E1%86%B9%E1%84%8B%E1%85%B3%E1%86%AF%E1%84%81%E1%85%A1%E1%84%8B%E1%85%AD&quot;&gt;Vue 3.0 Cracking Vue.js&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;toRefs를 이용해서 ref로 만든 다음, 그것을 스프레드 문법을 사용해서 껍데기를 벗겨 리턴해 주는 것인데요!&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;template&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;username&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/template&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;signUp&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;userData&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reactive&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;username&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;password&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;favoriteGameList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[],&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{...&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toRefs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;userData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/script&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;그럼 ref 형태이기 때문에 템플릿에서 편하게 이용할 수 있게 됩니다.&lt;/p&gt;
+
+&lt;p&gt;하지만… 이렇게 하면 스크립트에서는 Proxy 객체로 찍히게 되는데요,&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+    &lt;img src=&quot;/assets/images/2022-07/ywlee/proxy.png&quot; alt=&quot;&quot; style=&quot;width: 60%;&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;
+스크립트에서 가져다 쓸 때 바로 데이터만 뽑아내고 싶은데 어떻게 해야 할까요…&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+    &lt;img src=&quot;/assets/images/2022-07/ywlee/think.jpeg&quot; alt=&quot;&quot; style=&quot;width: 30%;&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;const rawObject = JSON.parse(JSON.stringify(proxyObject))&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;이렇게 하면 되기는 하는데, 너무 꼼수스럽게 생겼기 때문에 고민이 됩니다.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+    &lt;img src=&quot;/assets/images/2022-07/ywlee/oh.jpeg&quot; alt=&quot;&quot; style=&quot;width: 30%;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Composition api에서 제공해주는 toRaw라는 API를 찾았습니다.&lt;/p&gt;
+
+&lt;p&gt;이 함수를 이용하면 Proxy 값을 일반 raw 데이터로 변경해 준다고 합니다!!&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;toRaw(userData)&lt;/code&gt; 이런 식으로 사용하면…&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+    &lt;img src=&quot;/assets/images/2022-07/ywlee/toraw.png&quot; alt=&quot;&quot; style=&quot;width: 60%;&quot; /&gt;
+    &lt;figcaption align=&quot;center&quot;&gt;&lt;b&gt;뿅! 제가 원하는 객체가 튀어나옵니다.&lt;/b&gt;&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+    &lt;img src=&quot;/assets/images/2022-07/ywlee/thumbs.png&quot; alt=&quot;&quot; style=&quot;width: 30%;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;마무리-갑자기요&quot;&gt;마무리… (갑자기요)&lt;/h1&gt;
+
+&lt;h1 id=&quot;삽질하며-느낀점&quot;&gt;삽질하며 느낀점&lt;/h1&gt;
+
+&lt;h3 id=&quot;nuxt3-베타-버전-사용한다-했을-때-왜-여기저기서-말렸는지-알-것-같다&quot;&gt;Nuxt3 베타 버전 사용한다 했을 때.. 왜 여기저기서 말렸는지 알 것 같다.&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;일단 한글 문서는 둘째 치고, 영어 문서도 정말 정말 없었습니다.
+    &lt;ul&gt;
+      &lt;li&gt;클론 코딩을 위한… 간단한 Example 사이트라도 있었으면 하는 바람이 있었습니다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;쓰는 사람이 없으니 구글링을 해도 나오는 게 없었습니다.
+    &lt;ul&gt;
+      &lt;li&gt;구글링 하면 중국어 글이 가장 많이 나왔습니다… &lt;br /&gt;
+지금까지 봐온 중국어보다 이번에 삽질하면서 본 중국어가 더 많을 듯하네요… &lt;br /&gt;
+(중국어 못 하는 저를 탓합니다.)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;안 될 때 탓할 곳이 없습니다. (이미 문서에서 프로덕션 아니니 양해해 달라 했습니다.)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+    &lt;img src=&quot;/assets/images/2022-07/ywlee/nuxt3.png&quot; alt=&quot;&quot; style=&quot;width: 70%;&quot; /&gt;
+    &lt;figcaption align=&quot;center&quot;&gt;&lt;b&gt;하트까지 붙여놓음… 깜찍하네요..&lt;/b&gt;&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;아직 안 되는 게 너무 많습니다.
+    &lt;ul&gt;
+      &lt;li&gt;Store도 없고, Router middleware 도 없고… 이것저것 만들어 보기엔 너무 준비가 안 된 느낌?&lt;/li&gt;
+      &lt;li&gt;아직 안 되는 게 아닌, Nuxt3 자체에 없을 예정이라면 그거 정말 슬픈 소식이겠네요…&lt;/li&gt;
+      &lt;li&gt;그런 기능 없을 거라는 오피셜이라도 내 주세요!!&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;디버깅 하기 어려워서 원인 파악이 되지 않습니다.
+    &lt;ul&gt;
+      &lt;li&gt;페이지 하나 추가하면 계속 뻗어서 서버를 껐다가 켜야 되는데, 원인을 못 찾았습니다.&lt;/li&gt;
+      &lt;li&gt;client 측에서는 외부 js 모듈 사용이 안 됩니다… 요것도 끝끝내 원인을 찾지 못했습니다…&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;왜-알파-버전은-사용을-안-하는지-알-것-같다-feat-vuetify3&quot;&gt;왜 알파 버전은 사용을 안 하는지 알 것 같다. (feat. Vuetify3)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;안 될 때 탓할 곳이 없습니다. (근데 맞음… 이건 호기심 천국인 내 탓임)&lt;/li&gt;
+  &lt;li&gt;아직 안 되는 게 너무 많습니다.
+    &lt;ul&gt;
+      &lt;li&gt;프로덕션용 아니라고 했으면서 IS_PROD 를 검사하여 실행조차 되지 않는 Vuetify3&lt;/li&gt;
+      &lt;li&gt;가장 기본적인 컴포넌트라 생각되는 v-select 를 제공하지 않는 Vuetify3&lt;/li&gt;
+      &lt;li&gt;client-only 로 안 덮어 주면 에러 뱉어버리는 너라는 Vuetify3… 참 어렵다… &lt;br /&gt;
+&lt;em&gt;하지만 요것은 SSR 지원되는 Vuetify3가 나오면 달라질 것임미다.&lt;/em&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;페이지 만드는 시간보다 Vuetify3 꾸역꾸역 집어넣는 삽질의 시간이 더 길었습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+    &lt;img src=&quot;/assets/images/2022-07/ywlee/helpme.png&quot; alt=&quot;&quot; style=&quot;width: 40%;&quot; /&gt;
+    &lt;figcaption align=&quot;center&quot;&gt;Vuetify3 먹이면 살려달라고 뱉어내는 Nuxt3의 모습… &lt;br /&gt;
+&lt;b&gt;그냥 받아먹어… 너도 베타잖아…&lt;/b&gt;&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;공식 문서에 내용이 없다보니… (UI도 다 깨져있음) 그냥 제가 걷는 길이 맞는 길입니다. &lt;br /&gt;
+이렇게 하면 되겠지? 하며 추측해서 만들어야 합니다… ㅋㅋ&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;하지만-재미는-있었다&quot;&gt;하지만 재미는 있었다&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;구글링 해도 안 나오는 걸 해결해냈을 때 (해결한 게 아니라 원래 그 의도였다면…? ^_ㅠ) &lt;br /&gt;
+너무 뿌듯해서 그 날은 잠도 못 잤습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+    &lt;img src=&quot;/assets/images/2022-07/ywlee/gomin.png&quot; alt=&quot;&quot; style=&quot;width: 40%;&quot; /&gt;
+    &lt;figcaption align=&quot;center&quot;&gt;내 몸에 스티브 잡스가 들어온 게 아닐지 &lt;br /&gt;
+진지하게 고민하는 모습&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;백엔드까지 프로젝트 하나에서 만드니 새로운 느낌이었습니다.&lt;/li&gt;
+  &lt;li&gt;DB 까지 한번에 연동해 버리니 Nuxt 하나만 있으면 충분할 것 같은 느낌이 들었습니다.&lt;br /&gt;
+&lt;em&gt;(원하신다면 나중에 Nuxt3 에서 DB 연동하여 백엔드 만든 글을 추가하겠음미다.)&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;이게 될까…? 시도해 본 것 중엔 되는 게 있었고, 야 이건 무조건 된다! 하면서 시도한 것들은 무조건 안 됐습니다. ㅎ&lt;br /&gt;
+&lt;em&gt;(다음부턴 문서를 잘 보는 것으로,,,)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;그렇다면-nuxt3-의-장점은-뭔데요&quot;&gt;그렇다면… Nuxt3 의 장점은 뭔데요!&lt;/h1&gt;
+
+&lt;h3 id=&quot;1-하나의-플젝에서-모든-걸-만들고-싶을-때-사용할-수-있다&quot;&gt;1. 하나의 플젝에서 모든 걸 만들고 싶을 때 사용할 수 있다&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;기초지식만 있다면 누구든지 API 까지 만들 수 있습니다.
+    &lt;ul&gt;
+      &lt;li&gt;/server/api 의 하위 폴더에서 지지고 볶고 하면 개발자가 생각한대로 API 가 뚝딱 나옵니다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2-시간이-없어-nuxt-만-봐야-한다면-좋을-것-같다&quot;&gt;2. 시간이 없어 Nuxt 만 봐야 한다면 좋을 것 같다&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;express 나 http 모듈 설치 없이 Nuxt 문서만 보면 백엔드도 뚝딱 되기 때문에 편합니다.
+    &lt;ul&gt;
+      &lt;li&gt;기본 css 가 잡혀있다면, 사실 UI 프레임워크 없이 Nuxt 하나로도 충분합니다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;3-nuxt2-보단-기능적으로-구분할-수-있음에-가독성이-더-좋아졌다&quot;&gt;3. Nuxt2 보단 기능적으로 구분할 수 있음에 가독성이 더 좋아졌다.&lt;/h3&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+    &lt;img src=&quot;/assets/images/2022-07/ywlee/logical.png&quot; alt=&quot;&quot; style=&quot;width: 50%;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;기존에는 data, method, computed 등등 Option 별로 구분이 되어있었다면, (왼쪽)&lt;br /&gt;
+Nuxt3부터는 기능별로 구분할 수가 있습니다. (오른쪽)&lt;/li&gt;
+  &lt;li&gt;초반에는 오히려 코드가 길어져서 별로라고 생각했는데.. &lt;br /&gt;
+아래 사진을 보니 제가 Composition api 를 잘못 쓰고 있었음을 깨달았습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+    &lt;img src=&quot;/assets/images/2022-07/ywlee/composition.png&quot; alt=&quot;&quot; style=&quot;width: 80%;&quot; /&gt;
+    &lt;figcaption align=&quot;center&quot;&gt;출처: &lt;a href=&quot;https://www.vuemastery.com/courses/vue-3-essentials/why-the-composition-api/&quot;&gt;Why the Composition API &lt;/a&gt;&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;초반의 저는 setup 안에만 넣어 주려고 급급했는데, &lt;br /&gt;
+오른쪽처럼 Composition function 들을 만들면 더 깔끔하게 사용할 수가 있게 됩니다.&lt;/li&gt;
+  &lt;li&gt;코드를 파악할 때 위 아래로 왔다갔다 하는 것이 아닌, &lt;br /&gt;
+위부터 아래로! &lt;br /&gt;
+&lt;b&gt;마치, 코드를 책 읽듯이 읽을 수가 있습니다.&lt;/b&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;4-nuxt2-보단-코드-재사용에-용이하다&quot;&gt;4. Nuxt2 보단 코드 재사용에 용이하다.&lt;/h3&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+    &lt;img src=&quot;/assets/images/2022-07/ywlee/mixin.png&quot; alt=&quot;&quot; style=&quot;width: 50%;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;기존 Nuxt2 의 믹스인은 믹스인의 모든 Option 들이 해당 컴포넌트에 삽입됐습니다. (위 사진 참조)&lt;/li&gt;
+  &lt;li&gt;물론 이게 믹스인 파일만 추가하면 바로 적용이 되므로 편했지만… &lt;br /&gt;
+코드 충돌 위험성도 있고, 오히려 가독성을 해치기도 했습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+    &lt;img src=&quot;/assets/images/2022-07/ywlee/junha.png&quot; alt=&quot;&quot; style=&quot;width: 50%;&quot; /&gt;
+    &lt;figcaption align=&quot;center&quot;&gt;요 코드는 대체 뭐징...?&lt;/figcaption&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+    &lt;img src=&quot;/assets/images/2022-07/ywlee/composition2.png&quot; alt=&quot;&quot; style=&quot;width: 70%;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;하지만 위처럼 기능 별로 파일을 만든 뒤 함수를 등록해 주고,&lt;br /&gt;
+해당 함수를 사용할 컴포넌트에서 useSearch(), useSorting() 를 각각 호출한다면? &lt;br /&gt;
+믹스인보다 훨씬 더 보기 쉬워집니다.&lt;br /&gt;
+&lt;b&gt;난 이 컴포넌트에서 이런 기능들을 사용할 거야! 하고 미리 명시하는 느낌이 듭니다.&lt;/b&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;5-react-에-너무-익숙해져서-넘어오지-못한-개발자들도-다시-시도할-수-있다&quot;&gt;5. React 에 너무 익숙해져서 넘어오지 못한 개발자들도 다시 시도할 수 있다.&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Composition api 는 React hook과 비슷하게 생겨 적응이 쉽다는 장점이 있습니다. (저의 추측입니다 😂)&lt;/li&gt;
+  &lt;li&gt;반응형 변수 선언 방식도 비슷합니다.&lt;/li&gt;
+  &lt;li&gt;리액트 개발자라면 Nuxt2보단 Nuxt3의 가독성이 훨씬 더 좋게 느껴질 것입니다.&lt;/li&gt;
+  &lt;li&gt;사실 다 필요 없고… 사실 Nuxt 가 좀 더 사랑 받았으면 합니다… ㅎ 다들 츄라이 츄라이&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+    &lt;img src=&quot;/assets/images/2022-07/ywlee/try.png&quot; alt=&quot;&quot; style=&quot;width: 50%;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;오호라-그렇다면-nuxt3-을-상용-서비스에서-사용해-볼게요&quot;&gt;오호라… 그렇다면 Nuxt3 을 상용 서비스에서 사용해 볼게요!&lt;/h1&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+    &lt;b&gt;제발 그만두세요!!!!&lt;/b&gt;&lt;br /&gt;
+    &lt;img src=&quot;/assets/images/2022-07/ywlee/no.png&quot; alt=&quot;&quot; style=&quot;width: 30%;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;-장점-늘어놓고-왜-사용하지-말라는-거임&quot;&gt;?? 장점 늘어놓고 왜 사용하지 말라는 거임?&lt;/h3&gt;
+
+&lt;p&gt;일단… 결론부터 말씀드리자면… &lt;br /&gt;
+저는 Nuxt3 의 맛만 봤고, 하나투어 홈페이지 상용 서비스에서는 사용하지 않을 예정입니다…&lt;/p&gt;
+
+&lt;p&gt;왜 상용 서비스는 아직이라 생각하는 건지… 저의 생각을 끄적여 보겠습니다…&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ie 는 지원해 주지 않아요.
+    &lt;ul&gt;
+      &lt;li&gt;반응형 변수가 getter/setter 방식이었던 Vue2 와는 달리, &lt;br /&gt;
+Vue3 에서는 Proxy 방식을 채택하였습니다. &lt;br /&gt;
+아쉽게도 ie 는 Proxy 를 지원해 주지 않습니다.
+&lt;a href=&quot;https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Proxy&quot;&gt;Proxy - JavaScript MDN&lt;/a&gt;
+&lt;img src=&quot;/assets/images/2022-07/ywlee/mdn.png&quot; alt=&quot;&quot; style=&quot;width: 50%;&quot; /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Nuxt3 는 프로덕션 버전이 아니에요.
+    &lt;ul&gt;
+      &lt;li&gt;현재도 RC 버전입니다.&lt;/li&gt;
+      &lt;li&gt;안정적인 릴리즈 버전이 나오기 전까지는 상용 서비스에 올리지 않는 게 좋다고 생각합니다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;치명적인 에러가 발생하면 힘들 수도 있어요… ㅠ
+    &lt;ul&gt;
+      &lt;li&gt;아직 커뮤니티가 없기 때문에, 구글링 해서 나오는 게 엄청나게 적습니다.&lt;/li&gt;
+      &lt;li&gt;디버깅 고수라면 걱정하지 않아도 되지만, 그게 아니라면 매일 눈물을 흘릴 것입니다….&lt;/li&gt;
+      &lt;li&gt;에러 발생 시, Nuxt3 깃헙에 이슈 등록이 아닌 PR 을 생성하게 될 수도 있어요. (이건 어쩌면… 좋을지도…?)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;아니-그럼-어떻게-하라는-겁니까&quot;&gt;아니 그럼 어떻게 하라는 겁니까&lt;/h3&gt;
+
+&lt;p&gt;Composition API 는, 위의 내용 말고도 typescript 와 잘 맞는 등의 많은 장점이 있기 때문에, &lt;br /&gt;
+새로운 프로젝트를 만든다면! &lt;br /&gt;
+Options API 보단 Composition API 를 사용하는 것을 추천 드립니다.&lt;/p&gt;
+
+&lt;p&gt;그런 의미에서 저는… &lt;br /&gt;
+안정적인 Nuxt2 에 Composition API 를 라이브러리로 붙이는 것을 추천 드리고 싶습니다.&lt;/p&gt;
+
+&lt;p&gt;Nuxt2 와 Nuxt3 은 가장 크게 다른 점이 Composition API 라 생각이 들기 때문에, &lt;br /&gt;
+나중에 Nuxt3 로 옮길 때에도, 구조적으로 바뀌는 게 적으니 어려움이 적을 것이라 예상됩니다.&lt;/p&gt;
+
+&lt;p&gt;아래 링크를 참고하여 Nuxt2 + Composition API 를 고려해 보세요!&lt;/p&gt;
+
+&lt;p&gt;참조 url::: &lt;a href=&quot;https://composition-api.nuxtjs.org/&quot;&gt;Nuxt Composition API&lt;/a&gt;&lt;/p&gt;</content><author><name>HanaTour</name><email>15771233@hanatour.com</email></author><category term="blog" /><category term="Nuxt3" /><category term="Vue3" /><category term="CompositionAPI" /><summary type="html">안녕하세요! 하나투어 버티컬서비스개발팀의 프론트엔드 개발자 이영우 입니다. 🙌</summary></entry><entry><title type="html">토이 프로젝트 개발하며 벽느낀 썰 푼다 #1</title><link href="http://localhost:4000/2022/07/08/%EB%B2%BD%EB%8A%90%EB%82%80-%EC%8D%B0%ED%91%BC%EB%8B%A4-1/" rel="alternate" type="text/html" title="토이 프로젝트 개발하며 벽느낀 썰 푼다 #1" /><published>2022-07-08T00:00:00+09:00</published><updated>2022-07-08T00:00:00+09:00</updated><id>http://localhost:4000/2022/07/08/%EB%B2%BD%EB%8A%90%EB%82%80-%EC%8D%B0%ED%91%BC%EB%8B%A4#1</id><content type="html" xml:base="http://localhost:4000/2022/07/08/%EB%B2%BD%EB%8A%90%EB%82%80-%EC%8D%B0%ED%91%BC%EB%8B%A4-1/">&lt;p&gt;내가 몸담고 있는 하나투어는 프로젝트가 종료될때마다 구성원들이 모여 회고를 진행합니다. 서로 좋았던 점, 개선해야 할 점 등을 공유하고 발전을 도모하는 좋은 문화입니다.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;[ KPT 회고 ]&lt;/p&gt;
@@ -17,10 +761,9 @@
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-01.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;쓰지도 않는 EC2 인스턴스 비용을 3년 넘게 납부&lt;/i&gt;&lt;/div&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-01.png&quot; alt=&quot;&quot; style=&quot;max-width: 400px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;쓰지도 않는 EC2 인스턴스 비용을 3년 넘게 납부&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
-
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -31,43 +774,39 @@
 
 &lt;p&gt;그러던 2017년 말, 가상화폐 열풍에 휩쓸려 큰 돈을 들고 고점에 진입하게 되었다. 그리고 머지 않아 공포의 하락장이 시작되었다. (리플 40층 여기 있어요…)&lt;/p&gt;
 
-&lt;p&gt;친구들과 니가 더 많이 물렸냬, 내가 더 많이 물렸냬 하며 영웅담 아닌 영웅담을 술 안주 삼아 하루 하루 버티며 그렇게 2017년은 마무리 당했다.&lt;/p&gt;
+&lt;p&gt;친구들과 니가 더 많이 물렸네, 내가 더 많이 물렸네 하며 영웅담 아닌 영웅담을 술 안주 삼아 하루하루 버티며 그렇게 2017년은 마무리 당했다.&lt;/p&gt;
 
-&lt;p&gt;2018년 새해가 밝았고 내 물린 자산의 전망은 역시나 어두웠다.&lt;/p&gt;
+&lt;p&gt;2018년 새해가 밝았고 물려있는 자산의 전망은 역시나 어두웠다.&lt;/p&gt;
 
-&lt;p&gt;조치가 필요하다는 생각이 들었다.&lt;/p&gt;
+&lt;p&gt;무언가 행동해야 겠다는 생각이 들었다.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;“손절하고 저점을 잡은 후 매수 혹은 물타기 신공을 통해 고점에 팔아 원금을 회복”&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;손절하고 저점 매수 혹은 물타기 신공 후 고점에 팔아서 회복하기&lt;/strong&gt; 따위의 &lt;strong&gt;그 바닥&lt;/strong&gt; 해결법이 아닌 다른 방법으로 문제를 해결하고자 했다.&lt;/p&gt;
 
-&lt;p&gt;따위의 &lt;strong&gt;그 바닥&lt;/strong&gt; 해결법이 아닌 전혀 다른 방법으로 문제를 해결하고자 했다.&lt;/p&gt;
-
-&lt;p&gt;아무래도 나는 초보이고 차트의 오르내림에 금새 쪼그라들어 버리는 작은 심장을 가지고 있기 때문에 &lt;strong&gt;그 바닥&lt;/strong&gt; 해결법으로는 도저히 답이 보이지 않았다.&lt;/p&gt;
+&lt;p&gt;왜냐하면 나는 초보자이고 시세의 등락에 금새 쪼그라들어 버리는 작은 심장을 가지고 있기 때문에 &lt;strong&gt;그 바닥&lt;/strong&gt; 해결법으로는 도저히 답이 보이지 않았기 때문이다.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;img src=&quot;/assets/images/2022-07/hoho/asset-02.png&quot; alt=&quot;&quot; style=&quot;max-width: 300px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;얼음의 심장을 지닌 나의 로봇&lt;/i&gt;&lt;/div&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;얼음의 심장을 지닌 나의 로봇&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;그리하여 나는 로봇 &lt;strong&gt;리치김치맨&lt;/strong&gt;을 만들어서 가상화폐 거래 시장의 암세포에(시세 조작범, 고래 등) 맞서 싸우게 되는데…&lt;/p&gt;
+&lt;p&gt;그리하여 나는 로봇 &lt;strong&gt;리치김치맨&lt;/strong&gt;을 만들어 물려있는 자산의 주적이자 가상화폐 시장의 보이지 않는 암세포와 맞서 싸우게 된다.&lt;/p&gt;
 
 &lt;p&gt;과연 나는 적들과 맞서 싸워 이기고 큰 부자가 될 수 있을 것인가?&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;사실 나의 가장 큰 적은 무지한 &lt;strong&gt;나 자신&lt;/strong&gt;이었다.  어쩌면 내가 바로 암세포… 결국 내 자신과의 싸움… 쿨럭…&lt;/p&gt;
+  &lt;p&gt;사실 나의 가장 큰 적은 무지한 &lt;strong&gt;나 자신&lt;/strong&gt;이었다. (어쩌면 내가 바로 암세포)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;작은 아이디어에서 시작되었다.&lt;/p&gt;
+&lt;p&gt;머나먼 여정의 시작은 아이디어였다.&lt;/p&gt;
 
-&lt;p&gt;만약 거래소에서 open API를 제공해준다면, 굳이 내가 거래하지 않아도 코딩된 규칙에 의해 자동으로 거래를 할 수 있는 로봇을 만들 수 있다. 이 로봇은 얼음같은 심장으로 밤이고 낮이고 가리지 않고 아주 많은 거래를 통해 나에게 큰 부를 안겨줄 것이다.&lt;/p&gt;
+&lt;p&gt;만약 거래소에서 open API를 제공해준다면, 굳이 내가 거래하지 않아도 코딩된 규칙에 의해 자동으로 거래를 할 수 있는 로봇을 만들 수 있을 것이다. 이 로봇은 얼음같은 심장으로 밤이고 낮이고 가리지 않고 아주 많은 거래를 통해 나에게 큰 부를 안겨줄 것이다.&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;img src=&quot;/assets/images/2022-07/hoho/asset-03.jpeg&quot; alt=&quot;&quot; style=&quot;max-width: 300px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;두...두근!!!&lt;/i&gt;&lt;/div&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;두...두근!!!&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;blockquote&gt;
@@ -76,16 +815,18 @@
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;mk1&quot;&gt;Mk.1&lt;/h1&gt;
+&lt;h2 id=&quot;리치김치맨-mk1&quot;&gt;리치김치맨 Mk.1&lt;/h2&gt;
 
-&lt;p&gt;예상대로 가상화폐 거래소는 open API를 제공해주고 있었다. 순조로운 시작이었다. 문서를 참고하여 개발 Key를 발급받고 nodejs 서버에서 API를 호출했다.&lt;/p&gt;
+&lt;p&gt;순조로운 시작&lt;/p&gt;
 
-&lt;p&gt;nodejs 연동 샘플 코드가 작동하지 않아 직접 수정해서 사용했다.
-물론 당시 나의 능력을 고려해 봤을때 내가 잘 못 사용했을 수 있다.&lt;/p&gt;
+&lt;p&gt;예상대로 가상화폐 거래소는 open API를 제공해주고 있었다. 문서를 참고하여 개발 Key를 발급받고 nodejs 서버에서 API를 호출했다.&lt;/p&gt;
+
+&lt;p&gt;nodejs 샘플 코드가 작동하지 않아 직접 수정해서 사용했다.
+물론 당시 나의 능력을 고려해봤을때 내가 잘 못 사용했을 수 있다.&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-04.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;(역시.. 아무리 생각해봐도 샘플 코드가 잘못함)&lt;/i&gt;&lt;/div&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-04.png&quot; alt=&quot;&quot; style=&quot;max-width: 836px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;(역시.. 아무리 생각해도 샘플 코드가 잘못함)&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -95,10 +836,10 @@
 &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt; 
 
 &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fetchTicker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;requestUrl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;/info/ticker&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;requestUrl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;/info/ticker&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;xcoinAttrs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;xcoinAPI&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;wrappXCoinForm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;requestUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;HTTP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;POST&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;xcoinAttrs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;strHost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;HTTP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;POST&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;xcoinAttrs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;strHost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
                 &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
                     &lt;span class=&quot;na&quot;&gt;params&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;xcoinAttrs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;rgParams&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
                     &lt;span class=&quot;na&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;xcoinAttrs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;httpHeaders&lt;/span&gt;
@@ -113,29 +854,33 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;참고로 당시 해당 거래소에서 &lt;a href=&quot;https://namu.wiki/w/%EC%BA%94%EB%93%A4%EC%B0%A8%ED%8A%B8&quot; target=&quot;_blank&quot;&gt;캔들&lt;/a&gt;에 대한 API를 제공해주지 않아 직접 수집함&lt;/p&gt;
+  &lt;p&gt;참고로 당시 해당 거래소에서 &lt;a href=&quot;https://namu.wiki/w/%EC%BA%94%EB%93%A4%EC%B0%A8%ED%8A%B8&quot; target=&quot;_blank&quot;&gt;캔들&lt;/a&gt;에 대한 API를 제공해주지 않아 직접 수집&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-05.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;#첫연동 #성공적 #2018-01-15&lt;/i&gt;&lt;/div&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-05.png&quot; alt=&quot;&quot; style=&quot;max-width: 836px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;#첫연동 #성공적 #2018-01-15&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;생각보다 수월하게 진행되었다. 이제 다음 스텝은 매매 로직을 구상하는 것이다.&lt;/p&gt;
 
-&lt;p&gt;아주 쉬웠다. ‘가격이 올라가면 팔고 내려가면 사면 되자나?’&lt;/p&gt;
+&lt;p&gt;심플하게 ‘가격이 올라가면 팔고 내려가면 사면 되자나?’&lt;/p&gt;
 
-&lt;p&gt;마지막 거래 가격에서 2% 올라가면 팔고 다시 판 가격에서 2% 내려갔을때 산다면??? 매수-매도 한 사이클만 돌아도 &lt;strong&gt;4%를&lt;/strong&gt; 먹는 것이다. &lt;em&gt;(참고로 4%는 잘못된 계산인데 순수했던 시절을 추억하며 굳이 정정하지 않겠다.)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;마지막 거래 가격에서 2% 올라가면 팔고 다시 판매한 가격에서 2% 내려갔을때 구매하게 된다면??? 매도-매수 한 사이클만 돌아도 &lt;strong&gt;4%를&lt;/strong&gt; 먹는 것이다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;참고로 이때는 몰랐는데 4% 아님 -_ -&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-06.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-06.png&quot; alt=&quot;&quot; style=&quot;max-width: 836px; width: 100%;&quot; /&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;가상화폐는 변동성이 크니까 하루에 매수-매도 &lt;strong&gt;10 사이클&lt;/strong&gt; 돌게 된다면 발생하는 수익은 아래와 같다.&lt;/p&gt;
+&lt;p&gt;가상화폐는 변동성이 크니까 하루에 매수-매도 &lt;strong&gt;열 사이클&lt;/strong&gt;을 돌게 된다면 발생하는 수익은 아래와 같다.&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -195,7 +940,7 @@
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;img src=&quot;/assets/images/2022-07/hoho/asset-07.gif&quot; alt=&quot;&quot; style=&quot;max-width: 300px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;영머니!!!!!&lt;/i&gt;&lt;/div&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;영머니!!!!!&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -215,14 +960,14 @@ loop comparePrice() every 10 seconds
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;무지의 소치였다.&lt;/p&gt;
+&lt;p&gt;무지의 소치&lt;/p&gt;
 
 &lt;p&gt;아무리 변동성이 크다고 하지만 하루에 10회 이상 특정 가격 근처에서 2% 상승, 2% 하락 하는 현상은 발생하지 않는 것.&lt;/p&gt;
 
 &lt;p&gt;운이 좋으면 바로 오겠지만 최소 하루 혹은 워낙 고점이기 때문에 몇 달, 몇 년이 걸릴지 알 수 없는 노릇이다.&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-08.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-08.png&quot; alt=&quot;&quot; style=&quot;max-width: 836px; width: 100%;&quot; /&gt;
 &lt;/div&gt;
 
 &lt;h3 id=&quot;keep&quot;&gt;KEEP&lt;/h3&gt;
@@ -245,26 +990,24 @@ loop comparePrice() every 10 seconds
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;mk2&quot;&gt;Mk.2&lt;/h1&gt;
+&lt;h2 id=&quot;리치김치맨-mk2&quot;&gt;리치김치맨 Mk.2&lt;/h2&gt;
 
 &lt;p&gt;파도 위의 조각배 처럼 파도의 출렁임에 몸을 맡겨두고 마루와 골에서 야금 야금 이익을 실현할 수 있는 방법은 없을까?&lt;/p&gt;
-
-&lt;p&gt;말로 설명하자면 아주 간단한데…&lt;/p&gt;
 
 &lt;p&gt;가격이 싸지면 매수하고 비싸지면 매도한다.&lt;/p&gt;
 
 &lt;p&gt;가격이 올라가기 직전에 매수하고 가격이 내려가기 직전에 매도한다.&lt;/p&gt;
 
-&lt;p&gt;혹은 계속 하락하던 가격이 방향을 바꿔 올라가기 시작할때 매수하고 계속 상승하던 가격이 방향을 바꿔 내려가기 시작할때 매도한다.&lt;/p&gt;
+&lt;p&gt;혹은 계속 하락하던 가격이 방향을 바꿔 &lt;strong&gt;올라가기 시작할때 매수&lt;/strong&gt;하고 계속 상승하던 가격이 방향을 바꿔 &lt;strong&gt;내려가기 시작할때 매도&lt;/strong&gt;한다.&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-09.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;이렇게&lt;/i&gt;&lt;/div&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-09.png&quot; alt=&quot;&quot; style=&quot;max-width: 836px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;이렇게&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;말은 참 쉬운데 내가 무슨 점쟁이도 아니고 앞으로 오를지 내릴지 어떻게 예측할 수 있단 말인가!!&lt;/p&gt;
+&lt;p&gt;말은 참 쉬운데 무슨 점쟁이도 아니고 앞으로 오를지 내릴지 어떻게 예측할 수 있단 말인가!!&lt;/p&gt;
 
 &lt;p&gt;그러던 중 친구로부터 보조지표라는 것의 존재를 듣게 되었다.&lt;/p&gt;
 
@@ -274,9 +1017,9 @@ loop comparePrice() every 10 seconds
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;보조지표는 예로부터 주식에서 널리 쓰였나보다. (관련 지식 zero)&lt;/p&gt;
+&lt;p&gt;보조지표는 예로부터 주식에서 널리 쓰였나보다. (관련 지식 전무)&lt;/p&gt;
 
-&lt;p&gt;태어나서 처음 들어보는 용어들이 즐비했다. 이런 보조지표를 직접 구현해서 봇에 탑재한다면 어떨까? 희망이 생겼다.&lt;/p&gt;
+&lt;p&gt;태어나서 처음 들어보는 용어들이 즐비했다. 아무튼 이런 보조지표를 직접 구현해서 봇에 탑재한다면 어떨까? 한줄기 희망이 생겼다.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;여기서부터 내가 마음대로 해석한 내용이다. 정확하지 않은 내용이기 때문에 주의가 필요하다. (공업수학 : C)&lt;/p&gt;
@@ -290,9 +1033,9 @@ loop comparePrice() every 10 seconds
 
 &lt;p&gt;가상화폐는 오직 욕망으로 만들어진 거품이기 때문에 외부 자극에 몹시 민감하게 반응한다. 법무부장관의 발언, 세계적 CEO의 발언 등으로 급락과 급등을 반복한다.&lt;/p&gt;
 
-&lt;p&gt;그런데 내가 만약 단세포 생물이라면? 세상이 어떻게 변화하고 어떤 혼란이 발생하고 있는지, 나는 이렇게 작은데 알게 뭐임?? 그저 부표처럼 떠다니며 입 근처에 먹이가 지나가면 혓바닥만 낼름 하면 되는 것 아닌가? (물론 먹이가 작겠지만)&lt;/p&gt;
+&lt;p&gt;그런데 만약 내가 단세포 생물이라면? 세상이 어떻게 변화하고 어떤 혼란이 발생하고 있는지, 나는 이렇게 작은데 알게 뭐임?? 그저 부표처럼 떠다니며 입 근처에 먹이가 지나가면 혓바닥만 낼름 하면 되는 것 아닌가? (물론 먹이가 작겠지만)&lt;/p&gt;
 
-&lt;p&gt;근시눈을 가지고 순간의 위험만 감지하며 살아가는 아메바, 짚신벌레가 되어 보자!&lt;/p&gt;
+&lt;p&gt;근시안을 가지고 순간의 위험만 감지하며 살아가는 아메바, 짚신벌레가 되어 보자!&lt;/p&gt;
 
 &lt;p&gt;스트레이트 훅 같은 큰 공격이 아니라 많은 잽을 통한 포인트 위주의 경기 운영이랄까?&lt;/p&gt;
 
@@ -332,7 +1075,7 @@ loop comparePrice() every 10 seconds
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;img src=&quot;/assets/images/2022-07/hoho/asset-11.png&quot; alt=&quot;&quot; style=&quot;max-width: 300px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;오케이~ 땡큐!&lt;/i&gt;&lt;/div&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;오케이~ 땡큐!&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -340,8 +1083,8 @@ loop comparePrice() every 10 seconds
 &lt;p&gt;인터넷에 떠도는 여러 공식들을 참고하여 마침내 내 마음대로 RSI를 구현해버렸다.&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-12.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;대충 이런 느낌&lt;/i&gt;&lt;/div&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-12.png&quot; alt=&quot;&quot; style=&quot;max-width: 836px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;대충 이런 느낌&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -385,7 +1128,7 @@ if( rsi15 &amp;gt;= 70){
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;img src=&quot;/assets/images/2022-07/hoho/asset-13.png&quot; alt=&quot;&quot; style=&quot;max-width: 300px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;구양봉 : ???&lt;/i&gt;&lt;/div&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;구양봉 : ???&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -393,15 +1136,15 @@ if( rsi15 &amp;gt;= 70){
 &lt;p&gt;실제로 RSI 지수가 30이하로 떨어졌고 자동으로 buy()는 실행되었다.&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-14.jpeg&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;#RSI #성공적 #2018-01-16&lt;/i&gt;&lt;/div&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-14.jpeg&quot; alt=&quot;&quot; style=&quot;max-width: 400px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;#RSI #성공적 #2018-01-16&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-15.jpeg&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;#오후네시 #월급루팡중&lt;/i&gt;&lt;/div&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-15.jpeg&quot; alt=&quot;&quot; style=&quot;max-width: 836px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;#오후네시 #월급루팡중&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -418,27 +1161,27 @@ if( rsi15 &amp;gt;= 70){
 &lt;p&gt;이제 실전 배치를 위해 마지막으로 100만원을 가지고 테스트 해볼 생각이다.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;큰 돈이 물려 있어서 100만원이 하찮게 생각됨&lt;/p&gt;
+  &lt;p&gt;당시 큰 돈이 물려 있어서 100만원 정도는 하찮은 액수라고 여김&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;물론 시뮬레이션 환경을(가상 돈, 매수, 매도 함수 등) 만들고 충분히 테스트를 진행해야 했지만 이 전쟁통에 그럴 만한 여유는 없었다. &lt;em&gt;총만 들 수 있으면 바로 징집&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;물론 시뮬레이션 환경을(가상 돈, 매수, 매도 함수 등) 만들고 충분한 테스트를 진행해야 했지만 이 전쟁통에 그럴 만한 여유는 없었다. &lt;em&gt;방아쇠만 당길 수 있으면 바로 징집&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;너무 조급하게 시도했기 때문인지 진입 타이밍이 좋지 않았다. 하필 100만원을 넣자 마자 손쓸 틈도 없이 788,000원이 되어 버렸다. 다행히 로봇에 하루정도 맡겨두니 조금씩 회복은 하고 있었다.&lt;/p&gt;
+&lt;p&gt;너무 조급하게 시도했기 때문일까 진입 타이밍이 좋지 않았다. 하필 100만원을 넣자 마자 손쓸 틈도 없이 788,000원이 되었다. 다행히 로봇에 의해 조금씩 회복하고 있었다.&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-17.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-17.png&quot; alt=&quot;&quot; style=&quot;max-width: 400px; width: 100%;&quot; /&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;하지만 RSI 지표는 다음과 같은 상황을 대처하지 못했다.&lt;/p&gt;
+&lt;p&gt;RSI 지표는 다음과 같은 상황을 잘 대처하지 못했다.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;바닥은 감지하는데 지하실은 아몰랑&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;RSI 지수가 30 이하로 떨어져서 buy()가 실행 되었지만 더 떨어져 지하실을 찍게 되는 경우 반등할때 순간적으로 RSI 지수가 70을 넘게 되면 sell()이 실행 된다는 것이다.&lt;/p&gt;
+&lt;p&gt;RSI 지수가 30 이하로 떨어져서 buy()가 실행 되었지만 더 떨어져 지하실을 찍게 되는 경우, 반등할때 순간적으로 RSI 지수가 70을 넘게 되면 sell()이 실행 된다는 것이다.&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-18.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-18.png&quot; alt=&quot;&quot; style=&quot;max-width: 836px; width: 100%;&quot; /&gt;
 &lt;/div&gt;
 
 &lt;h3 id=&quot;keep-1&quot;&gt;KEEP&lt;/h3&gt;
@@ -465,7 +1208,7 @@ if( rsi15 &amp;gt;= 70){
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;mk3&quot;&gt;Mk.3&lt;/h1&gt;
+&lt;h2 id=&quot;리치김치맨-mk3&quot;&gt;리치김치맨 Mk.3&lt;/h2&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;img src=&quot;/assets/images/2022-07/hoho/asset-19.gif&quot; alt=&quot;&quot; style=&quot;max-width: 300px; width: 100%;&quot; /&gt;
@@ -488,7 +1231,7 @@ if( rsi15 &amp;gt;= 70){
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;이로서 최소한, 절대로 손해는 보지 않는 무적이 되었다.&lt;/p&gt;
+&lt;p&gt;이로써 최소한, 절대로 손해는 보지 않는 무적이 되었다.&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;img src=&quot;/assets/images/2022-07/hoho/asset-20.png&quot; alt=&quot;&quot; style=&quot;max-width: 300px; width: 100%;&quot; /&gt;
@@ -496,22 +1239,24 @@ if( rsi15 &amp;gt;= 70){
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;그리고 한가지 문제가 생겼다.&lt;/p&gt;
+&lt;p&gt;그리고 한가지 문제가 발생했다.&lt;/p&gt;
 
-&lt;p&gt;방어력에 올인에 공격력 1, 지능 0인 캐릭터가 만들어졌다. 다시 태초의 마을로 돌아가 버린것&lt;/p&gt;
+&lt;p&gt;방어력에 몰빵한 나머지 공격력 1, 지능 0짜리 캐릭터가 만들어진것. 다시 태초의 마을로 돌아가 버렸다.&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-08.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;#태초마을로&lt;/i&gt;&lt;/div&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-08.png&quot; alt=&quot;&quot; style=&quot;max-width: 836px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;#태초마을로&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;keep-2&quot;&gt;KEEP&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;없음
-    &lt;h3 id=&quot;problem-2&quot;&gt;PROBLEM&lt;/h3&gt;
-  &lt;/li&gt;
+  &lt;li&gt;없음&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;problem-2&quot;&gt;PROBLEM&lt;/h3&gt;
+&lt;ul&gt;
   &lt;li&gt;손해를 보지 않지만 대신 매매 빈도가 적어 큰 이익을 만들 수 없음&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -522,14 +1267,14 @@ if( rsi15 &amp;gt;= 70){
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;mk4&quot;&gt;Mk.4&lt;/h1&gt;
+&lt;h2 id=&quot;리치김치맨-mk4&quot;&gt;리치김치맨 Mk.4&lt;/h2&gt;
 
-&lt;p&gt;보조지표는 어디까지나 보조 수단일 뿐, 결국 먹이사슬 최상위 티어인 휴먼의 강력한 결단이 필요한 것 아닐까?&lt;/p&gt;
+&lt;p&gt;보조지표는 어디까지나 보조 수단일 뿐, 결국 먹이사슬 최상위 티어인 휴먼의 강력한 결단이 필요한것이 아닐까?&lt;/p&gt;
 
-&lt;p&gt;3초 단위로 새로이 수집되는 가격과 계산된 rsi 지표를 그래프로 보여주고 즉시 거래를 실행 할 수 있는 버튼을 가진 클라이언트를 개발했다.&lt;/p&gt;
+&lt;p&gt;3초 단위로 수집되는 가격과 계산된 rsi 지표를 그래프로 보여주고 즉시 거래를 실행 할 수 있는 버튼을 만들어보았다.&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-21.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-21.png&quot; alt=&quot;&quot; style=&quot;max-width: 836px; width: 100%;&quot; /&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -537,8 +1282,8 @@ if( rsi15 &amp;gt;= 70){
 &lt;p&gt;가격 정보와 rsi 지표를 참고하여 휴먼이 직접 매매하면 되는 것이다.&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-22.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;무슨 단타 머신을 만들어 버렸어...&lt;/i&gt;&lt;/div&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-22.png&quot; alt=&quot;&quot; style=&quot;max-width: 836px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;무슨 단타 머신을 만들어 버렸어...&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -561,15 +1306,15 @@ if( rsi15 &amp;gt;= 70){
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;mk5&quot;&gt;Mk.5&lt;/h1&gt;
+&lt;h2 id=&quot;리치김치맨-mk5&quot;&gt;리치김치맨 Mk.5&lt;/h2&gt;
 
 &lt;p&gt;기상청 슈퍼 컴퓨터(심지어 세계 두뇌 짱짱맨들이 개발)도 당장 오늘의 날씨를 예측하지 못해 욕먹는 판국에 대한민국 평범한(?) 회사원이 매일 퇴근 후 쩔어 있는 상태로 코딩한 로봇이 무슨 신묘한 힘이 있다고 앞날을 예측해서 돈을 긁어 모을 수 있단 말인가?&lt;/p&gt;
 
 &lt;p&gt;현타가 쎄게 오는 와중에도 나는 포기를 몰랐다.&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-23.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;님아 손절좀 ㅠ&lt;/i&gt;&lt;/div&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-23.png&quot; alt=&quot;&quot; style=&quot;max-width: 836px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;님아 손절좀 ㅠ&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -596,40 +1341,40 @@ MACD의 원리는 장기 이동평균선과 단기이동평균선이 서로 멀�
 &lt;p&gt;우선 MACD 보조지표의 근간은 &lt;a href=&quot;https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%8F%99%ED%8F%89%EA%B7%A0&quot; target=&quot;_blank&quot;&gt;지수이동평균(EMA)&lt;/a&gt;의 구현에서 시작한다.&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-24.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;ㄷㄷ 내가 이걸 구현했다고?&lt;/i&gt;&lt;/div&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-24.png&quot; alt=&quot;&quot; style=&quot;max-width: 836px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;ㄷㄷ 내가 이걸 구현했다고?&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;지수이동평균(EMA)을 12일, 26일, 9일 간격으로 계산한 결과를 각각 준비한다.&lt;/p&gt;
 
-&lt;p&gt;그리고 그 재료를 조합하여 MACD, SIGNAL를 계산한다. 이 데이터를 3초마다 누적한다. 그리고 MACD, SIGNAL 라인이 교차하기를 기다리기만 하면 된다.&lt;/p&gt;
+&lt;p&gt;그리고 그 재료를 조합하여 MACD, SIGNAL를 계산한다. 결과를 누적 시키고 누적된 MACD, SIGNAL 라인이 교차하기를 기다리면 되는 것이다.&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-25.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;대충 이런 느낌&lt;/i&gt;&lt;/div&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-25.png&quot; alt=&quot;&quot; style=&quot;max-width: 836px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;대충 이런 느낌&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;img src=&quot;/assets/images/2022-07/hoho/asset-26.png&quot; alt=&quot;&quot; style=&quot;max-width: 300px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;MACD가 SIGNAL을 뚤고 올라감 : 매수 신호&lt;/i&gt;&lt;/div&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;MACD가 SIGNAL을 뚤고 올라감 : 매수 신호&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
   &lt;img src=&quot;/assets/images/2022-07/hoho/asset-27.png&quot; alt=&quot;&quot; style=&quot;max-width: 300px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;SIGNAL이 MACD를 뚫고 올라감 : 매도 신호&lt;/i&gt;&lt;/div&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;SIGNAL이 MACD를 뚫고 올라감 : 매도 신호&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-28.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;개선된 로직과 UI&lt;/i&gt;&lt;/div&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-28.png&quot; alt=&quot;&quot; style=&quot;max-width: 836px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;개선된 로직과 UI&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -654,25 +1399,25 @@ MACD의 원리는 장기 이동평균선과 단기이동평균선이 서로 멀�
 &lt;p&gt;실행해보자.&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;video src=&quot;/assets/images/2022-07/hoho/asset-29.mp4&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; controls=&quot;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;파란색 영역 : 가격, 검은색 점선 : MACD, 초록색 점선 : SIGNAL&lt;/i&gt;&lt;/div&gt;
+  &lt;video src=&quot;/assets/images/2022-07/hoho/asset-29.mp4&quot; alt=&quot;&quot; style=&quot;max-width: 836px; width: 100%;&quot; controls=&quot;&quot; preload=&quot;auto&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;파란색 영역 : 가격, 검은색 점선 : MACD, 초록색 점선 : SIGNAL&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;가격이 지속적으로 하락하다가 중간에 잠시 반등 하는데 이 반등에 속지 않고 정확한 지하실을 감지하고 매수해버렸다.&lt;/p&gt;
 
-&lt;p&gt;이거 혹시 내가 욕망으로 타락 해버린 인류를 구할 백신을 개발해 버린것은 아닐까?&lt;/p&gt;
+&lt;p&gt;이거 혹시 내가 (욕망으로 타락 해버린) 인류를 구할 백신을 개발해 버린것은 아닐까?&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-30.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-30.png&quot; alt=&quot;&quot; style=&quot;max-width: 400px; width: 100%;&quot; /&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;라는 설레발도 잠시&lt;/p&gt;
 
-&lt;p&gt;지속적으로 모니터링 해본 결과 나의 MACD가 역사에 큰 획을 그을 정도로 쿨한 것은 아니었다.&lt;/p&gt;
+&lt;p&gt;지속적으로 모니터링 해본 결과 내가 만든 MACD가 역사에 큰 획을 그을 정도로 쿨한 것은 아니었다.&lt;/p&gt;
 
 &lt;p&gt;매년 발표되는 탈모 치료제 정도의 포지션이랄까&lt;/p&gt;
 
@@ -681,8 +1426,8 @@ MACD의 원리는 장기 이동평균선과 단기이동평균선이 서로 멀�
 &lt;/blockquote&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-31.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;횡보 시 크로스가 많이 발생하며 정확도가 떨어진다.&lt;/i&gt;&lt;/div&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-31.png&quot; alt=&quot;&quot; style=&quot;max-width: 836px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;횡보 시 크로스가 많이 발생하며 정확도가 떨어진다.&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -714,37 +1459,35 @@ MACD의 원리는 장기 이동평균선과 단기이동평균선이 서로 멀�
   &lt;li&gt;모든 사회 활동을 중단하고 무인도에서 3개월 정도 생활하며 All New RichKimchiMan을 만든다. (전기, 인터넷은 그때 가서 고민)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;만약 이때 TRY 했더라면…
-거대 거품으로 부터 인류를 구한 지구-1999999의 나를 상상하며…&lt;/p&gt;
-
-&lt;p&gt;수개월간 고군분투 했지만 계속된 하락으로 자산이 -90%가 되었을때, 조용히 덮어두고 더욱 열심히 현실의 나를 살기로 했다.&lt;/p&gt;
+&lt;p&gt;만약 이때 TRY 했더라면… (처물린) 인류를 구원한 지구-1999999의 나를 상상해본다.&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-32.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;최종진화 : 한번에 n개씩 조회, 계산하며 유리한 항목으로 스왑&lt;/i&gt;&lt;/div&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-32.png&quot; alt=&quot;&quot; style=&quot;max-width: 400px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;한번에 n개씩 조회하며 스왑할 수 있는 최종형&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;
+수개월간 밤잠 설쳐가며 고군분투 했지만 계속된 하락으로 -90%가 되었을때, 파랑새 따위 조용히 서랍장에 넣어두고 열심히 현실의 나를 살기로 했다.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;
 &lt;br /&gt;
 &lt;br /&gt;
-&lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;ps&quot;&gt;P.S.&lt;/h2&gt;
+&lt;hr /&gt;
 
-&lt;h3 id=&quot;macd-구현-후-약-한달-뒤&quot;&gt;MACD 구현 후 약 한달 뒤&lt;/h3&gt;
+&lt;h3 id=&quot;ps-macd-구현-후-약-한달-뒤&quot;&gt;P.S. MACD 구현 후 약 한달 뒤&lt;/h3&gt;
 
 &lt;p&gt;2018년 2월 24일 ~ 3월 19일 간의 기록&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-33.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;2월 24일 매수 : 0.4387개&lt;/i&gt;&lt;/div&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-33.png&quot; alt=&quot;&quot; style=&quot;max-width: 400px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;2월 24일 매수 : 0.4387개&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-34.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;3월 19일 매도 : 0.5개&lt;/i&gt;&lt;/div&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-34.png&quot; alt=&quot;&quot; style=&quot;max-width: 400px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;3월 19일 매도 : 0.5개&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -752,8 +1495,8 @@ MACD의 원리는 장기 이동평균선과 단기이동평균선이 서로 멀�
 &lt;p&gt;하락장에서 2월24일 0.4387개의 코인을 매수, 3월19일 04:10 기준 0.5개 → 약 한달 동안 눈덩이를 열심히 굴려 약 15%의 코인을 증가시킬 수 있었다.&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-35.png&quot; alt=&quot;&quot; style=&quot;max-width: 300px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;영차 영차&lt;/i&gt;&lt;/div&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-35.png&quot; alt=&quot;&quot; style=&quot;max-width: 400px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;영차 영차&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -763,132 +1506,39 @@ MACD의 원리는 장기 이동평균선과 단기이동평균선이 서로 멀�
 &lt;p&gt;하지만 나약한 휴먼은 가혹한 하락장을 견디지 못하고 떠나고 말았다는 슬픈 이야기&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-36.png&quot; alt=&quot;&quot; style=&quot;max-width: 300px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;뀨...&lt;/i&gt;&lt;/div&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-36.png&quot; alt=&quot;&quot; style=&quot;max-width: 400px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;뀨...&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-37.png&quot; alt=&quot;&quot; style=&quot;max-width: 300px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;#지옥의3월차트&lt;/i&gt;&lt;/div&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-37.png&quot; alt=&quot;&quot; style=&quot;max-width: 400px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;#지옥의3월차트&lt;/i&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;이후에 틈틈이 All New RichKimchiMan 개발을 시도 했지만 바쁜 회사 생활로 아이디어가 없다는 핑계로 미뤄지기 일쑤였다.&lt;/p&gt;
+&lt;p&gt;이후에 틈틈이 All New RichKimchiMan을 시도 했지만 바쁜 회사 생활로 아이디어가 없다는 핑계로 미루곤 했다.&lt;/p&gt;
 
 &lt;p&gt;그러던 2022년 2월 비교적 최근&lt;/p&gt;
 
-&lt;p&gt;다달이 요금만 빠져 나가던 EC2 인스턴스를 3년만에 삭제했다. (퉤 : 침 뱉는 소리)&lt;/p&gt;
+&lt;p&gt;다달이 요금만 빠져 나가던 EC2 인스턴스를 3년만에 삭제하였다.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;
-&lt;br /&gt;
 &lt;br /&gt;
 &lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-38.png&quot; alt=&quot;&quot; style=&quot;max-width: 600px; width: 100%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.8em;&quot;&gt;&lt;i&gt;그래서 내가 이대로 포기했냐고?&lt;/i&gt;&lt;/div&gt;
-&lt;/div&gt;</content><author><name>HanaTour</name><email>15771233@hanatour.com</email></author></entry><entry><title type="html">JAVA DTO 를 Inner Class 를 향한 고민</title><link href="http://localhost:4000/2022/06/24/dto-inner-class/" rel="alternate" type="text/html" title="JAVA DTO 를 Inner Class 를 향한 고민" /><published>2022-06-24T00:00:00+09:00</published><updated>2022-06-24T00:00:00+09:00</updated><id>http://localhost:4000/2022/06/24/dto-inner-class</id><content type="html" xml:base="http://localhost:4000/2022/06/24/dto-inner-class/">&lt;blockquote&gt;
-  &lt;p&gt;DTO.. 어느 개발자는 DTO class 가 너무 많고.. 어느 개발자는 너무 inner class 를 사용해서 추적이 어려워요ㅜㅜ&lt;/p&gt;
-&lt;/blockquote&gt;
+  &lt;img src=&quot;/assets/images/2022-07/hoho/asset-38.png&quot; alt=&quot;&quot; style=&quot;max-width: 836px; width: 100%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.8em; margin-top: 12px;&quot;&gt;&lt;i&gt;그래서 내가 이대로 포기했냐고?&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;h2 id=&quot;어떤-얘기가-나왔는가&quot;&gt;어떤 얘기가 나왔는가?&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;기능은 달라도 DTO 컬럼이 같다면 하나로 통일해야하는가?&lt;/li&gt;
-  &lt;li&gt;기능이 다르니 DTO 컬럼이 같더라도 나누어야하는가?&lt;/li&gt;
-  &lt;li&gt;DTO 생성은 inner class 를 사용해야하나요??&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;</content><author><name>HanaTour</name><email>15771233@hanatour.com</email></author><category term="blog" /><category term="javascript" /><category term="nodejs" /><category term="가상화폐" /><summary type="html">내가 몸담고 있는 하나투어는 프로젝트가 종료될때마다 구성원들이 모여 회고를 진행합니다. 서로 좋았던 점, 개선해야 할 점 등을 공유하고 발전을 도모하는 좋은 문화입니다.</summary></entry><entry><title type="html">프로젝트 표준화 여정 #1 이름에 진심인 편</title><link href="http://localhost:4000/2022/06/20/%ED%99%8D%EC%9D%80%EC%8B%A4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%91%9C%EC%A4%80%ED%99%94-%EC%97%AC%EC%A0%95-1/" rel="alternate" type="text/html" title="프로젝트 표준화 여정 #1 이름에 진심인 편" /><published>2022-06-20T00:00:00+09:00</published><updated>2022-06-20T00:00:00+09:00</updated><id>http://localhost:4000/2022/06/20/%ED%99%8D%EC%9D%80%EC%8B%A4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%91%9C%EC%A4%80%ED%99%94-%EC%97%AC%EC%A0%95-#1</id><content type="html" xml:base="http://localhost:4000/2022/06/20/%ED%99%8D%EC%9D%80%EC%8B%A4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%91%9C%EC%A4%80%ED%99%94-%EC%97%AC%EC%A0%95-1/">&lt;p&gt;안녕하세요 :)&lt;/p&gt;
 
-&lt;h2 id=&quot;이러한-고민을-하게된-이유&quot;&gt;이러한 고민을 하게된 이유..&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;초반 컨셉 이후 본인이 개발해둔 기능이 점점 커진다고 쳤을 때, 기능이 커질 수록 DTO 의 크기도 커질 수 있다고 생각합니다. 또 무분별한 DTO 생성으로 인해
-request, response dto 를 생성하면서 클래스 명이 계속 중복되는 부분이 많고, DTO 도 점점 많아지게 되면서, 혼란스러운 상황에 잘못된 DTO 를 생성해서 개발이 진행될 수도 있습니다.
-추상적으로 하나의 DTO 로 모든 걸 처리하려할때, 어떤 항목은 사용하지않고, 어떤 항목은 변수명만으로 어떤 기능을 하는지 추측하기 어렵고, 파악하기 힘듭니다. 
-이런 문제점들이 혼란을 줄 수 있습니다.
-(주고 있고, 저도 실수했습니다. 실수로 인해 개발 일정 못맞출 뻔 했습니다.)&lt;/li&gt;
-  &lt;li&gt;어떤 개발자는 inner class 로 DTO 관리 하라고 조언하고, 어떤 개발자는 기능별로 나눠서 관리하라고 조언해서 제가 앞으로 개발할 때 혼동이 왔습니다&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;엥-그러면-무조건-dto-생성은-inner-class-를-사용해야하나요&quot;&gt;엥 그러면 무조건 DTO 생성은 inner class 를 사용해야하나요??&lt;/h2&gt;
-&lt;p&gt;(=DTO.. inner class 로 관리해야해? 아니면 기능마다 DTO 생성해서 관리해야해 ??)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/107032371/175870104-acc142ab-f072-4d46-9949-3687b7d16737.gif&quot; alt=&quot;_20210608142803_절레절레&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;아뇨.. 개발에 있어서 무조건과 무지성은 정말 안된다고 생각합니다..
-inner class 로 만들려는 목적이 도메인 관리를 위한 거라면 차라리 패키지를 명확하게 구분하는게 더 낫다고 생각합니다
-처음에는 관리가 편할것 같은데 &lt;strong&gt;Create, Update, Delete, Select&lt;/strong&gt; 등등 여러 목적으로 계속 생기면 DTO 모델 클래스 내 내용이 복잡해집니다.
-그럼 차라리 Inner class 보다는 아래 예같이 패키지는 나누는 것이 운영에 더 낫다고 생각 됩니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img width=&quot;814&quot; alt=&quot;KakaoTalk_Image_2022-06-23-18-53-21&quot; src=&quot;https://user-images.githubusercontent.com/107032371/175271885-dbdd934a-56cf-48ae-8429-c96b73ad7f50.png&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;흠-그럼-왜-dto-는-inner-class-로-사용하라고-고집부린건데요&quot;&gt;흠… 그럼 왜 DTO 는 inner class 로 사용하라고 고집부린건데요;&lt;/h2&gt;
-&lt;p&gt;🤔 전 그래서 주로 Resttemplate 로 외부 API 의 Request, Response DTO 를 맞추는데 사용합니다.
-도메인 관리에 비해 단순히 목적 하나. 양식에 맞게 호출하고, 양식에 맞게 응답 받기위해 생성하는 거라
-아무리 많이 생성하더라도 클래스 내 내용이 복잡해질 일은 없다고 생각합니다.&lt;/p&gt;
-
-&lt;h2 id=&quot;실제로-사용한-예시&quot;&gt;실제로 사용한 예시&lt;/h2&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;@Getter&lt;/span&gt;
-&lt;span class=&quot;nd&quot;&gt;@NoArgsConstructor&lt;/span&gt;
-&lt;span class=&quot;nd&quot;&gt;@AllArgsConstructor&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ResponseDTO&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;logKey&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Data&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;nd&quot;&gt;@Getter&lt;/span&gt;
-    &lt;span class=&quot;nd&quot;&gt;@NoArgsConstructor&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;orderNo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Detail&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;detailList&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ResponseObject&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;responseObject&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;nd&quot;&gt;@Getter&lt;/span&gt;
-    &lt;span class=&quot;nd&quot;&gt;@NoArgsConstructor&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Detail&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>HanaTour</name><email>15771233@hanatour.com</email></author><category term="blog" /><category term="java" /><summary type="html">DTO.. 어느 개발자는 DTO class 가 너무 많고.. 어느 개발자는 너무 inner class 를 사용해서 추적이 어려워요ㅜㅜ</summary></entry><entry><title type="html">Hanatour 기술블로그 셋팅</title><link href="http://localhost:4000/2022/03/20/intelli-j-%ED%8C%8C%EC%9D%BC-%EC%A0%80%EC%9E%A5%EC%8B%9C-reformat-imports-%EC%A0%95%EB%A6%AC/" rel="alternate" type="text/html" title="Hanatour 기술블로그 셋팅" /><published>2022-03-20T00:00:00+09:00</published><updated>2022-03-20T00:00:00+09:00</updated><id>http://localhost:4000/2022/03/20/intelli-j-%ED%8C%8C%EC%9D%BC-%EC%A0%80%EC%9E%A5%EC%8B%9C-reformat-imports-%EC%A0%95%EB%A6%AC</id><content type="html" xml:base="http://localhost:4000/2022/03/20/intelli-j-%ED%8C%8C%EC%9D%BC-%EC%A0%80%EC%9E%A5%EC%8B%9C-reformat-imports-%EC%A0%95%EB%A6%AC/">&lt;blockquote&gt;
-  &lt;p&gt;zekill(지킬) 로 github.io 기술블로그 셋팅&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;h3 id=&quot;기본-설정&quot;&gt;기본 설정&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;위치&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/2022-03-20/default.png&quot; alt=&quot;기본&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;변경-설정&quot;&gt;변경 설정&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/2022-03-20/after.png&quot; alt=&quot;설정&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;해당 설정은 각 Project 별로 설정 해야 한다.&lt;/li&gt;
-  &lt;li&gt;변경 라인만 Reformat 하면 나중에 리뷰 할때 덜 당황한다.&lt;/li&gt;
-  &lt;li&gt;참고로 사용하지 않는 Imports는 자바의 경우 나중에 컴파일 할 때 오류가 발생할수 있으니 미리미리 정리 해주는게 좋다.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>HanaTour</name><email>15771233@hanatour.com</email></author><category term="blog" /><category term="setting" /><summary type="html">zekill(지킬) 로 github.io 기술블로그 셋팅</summary></entry><entry><title type="html">프로젝트 표준화 여정 #1 이름에 진심인 편</title><link href="http://localhost:4000/2020/06/20/%ED%99%8D%EC%9D%80%EC%8B%A4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%91%9C%EC%A4%80%ED%99%94-%EC%97%AC%EC%A0%95-1/" rel="alternate" type="text/html" title="프로젝트 표준화 여정 #1 이름에 진심인 편" /><published>2020-06-20T00:00:00+09:00</published><updated>2020-06-20T00:00:00+09:00</updated><id>http://localhost:4000/2020/06/20/%ED%99%8D%EC%9D%80%EC%8B%A4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%91%9C%EC%A4%80%ED%99%94-%EC%97%AC%EC%A0%95-#1</id><content type="html" xml:base="http://localhost:4000/2020/06/20/%ED%99%8D%EC%9D%80%EC%8B%A4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%91%9C%EC%A4%80%ED%99%94-%EC%97%AC%EC%A0%95-1/">&lt;p&gt;안녕하세요 :)&lt;/p&gt;
-
-&lt;p&gt;하나투어 IT본부에서 온라인서비스랩 온라인서비스개발팀 코어파트 &lt;em&gt;&lt;del&gt;헉헉&lt;/del&gt;&lt;/em&gt; 에서 
+&lt;p&gt;하나투어 IT 본부 온라인서비스랩 온라인서비스개발팀 코어파트 &lt;em&gt;&lt;del&gt;헉헉&lt;/del&gt;&lt;/em&gt; 에서 
 백엔드 개발을 맡고 있는 &lt;strong&gt;홍은실&lt;/strong&gt;입니다. 
 하나투어 공식 개발 블로그를 만들자고 수 개월 동안 랩장님을 들들 볶은 공로로
 첫 필진 그룹으로 선정되었습니다.&lt;/p&gt;
@@ -902,14 +1552,14 @@ inner class 로 만들려는 목적이 도메인 관리를 위한 거라면 차�
 
 &lt;h2 id=&quot;서론&quot;&gt;서론&lt;/h2&gt;
 
-&lt;p&gt;올 초, 제가 소속된 코어파트에서는 레거시 서비스 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ICE&lt;/code&gt; 를 새 프로젝트 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DCR&lt;/code&gt; 로 옮기는 대장정의 첫 걸음을 내딛게 되었습니다.
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DCR&lt;/code&gt; 을 시작할 때, 우리는 일부 비즈니스 이전과 프로젝트 표준화 작업을 한꺼번에 진행해야 했습니다.&lt;/p&gt;
+&lt;p&gt;올 초, 제가 소속된 코어파트에서는 레거시 서비스를 새 프로젝트로 옮기는 대장정의 첫 걸음을 내딛게 되었습니다.
+새로운 프로젝트를 시작할 때, 우리는 일부 비즈니스 이전과 프로젝트 표준화 작업을 한꺼번에 진행해야 했습니다.&lt;/p&gt;
 
-&lt;p&gt;프로젝트를 표준화 하려는 목적은 여러가지가 있지만 “&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DCR&lt;/code&gt; 이 레거시가 되는 시기를 늦추자” 가 제일 컸던 것 같아요.&lt;/p&gt;
+&lt;p&gt;프로젝트를 표준화 하려는 목적은 여러가지가 있지만 “새로운 프로젝트가 레거시 화 되는 시기를 늦추자” 가 첫번째 목표였습니다.&lt;/p&gt;
 
-&lt;p&gt;그 목적을 이루기 위해, 우리는 여러 원칙을 세우기로 했고, 가장 처음으로 논의된 것이 “좋은 이름 짓기” 였습니다.&lt;/p&gt;
-
-&lt;p&gt;우리는 서로에게 질문했습니다.&lt;/p&gt;
+&lt;p&gt;그 목표를 이루기 위해, 우리는 여러 원칙을 세우기로 했습니다.
+그 중 가장 처음으로 논의된 것은 바로바로.. “좋은 이름 짓기” 입니다.
+아래 목록은 “좋은 이름” 이라는 막연함을 해소하는 데 도움을 주는 질문들 입니다.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;어떤 이름이 좋은 이름인가?&lt;/li&gt;
@@ -919,25 +1569,124 @@ inner class 로 만들려는 목적이 도메인 관리를 위한 거라면 차�
   &lt;li&gt;등등 ..&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;저 질문들에 대한 온전한 답을 아직도 내리지 못했지만, &lt;strong&gt;약간의 실마리&lt;/strong&gt;를 얻을 수 있었습니다.&lt;/p&gt;
+&lt;p&gt;이에 대한 완벽한 답은 여전히 찾고 있지만, 우리가 가야할 방향은 결정할 수 있었습니다.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;좋은 이름은, 그 의도/의미가 명확해야 한다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;명확함은 질문을 줄이고, 도메인/비즈니스를 드러내며, 코드 읽는 것을 쉽게 합니다. &lt;del&gt;그리고 빠른 퇴근을 보장합니다.&lt;/del&gt;
-우리는 이런 기준을 가지고 각종 클래스/메소드/변수 등의 이름을 짓기 위해 노력 해 왔고, 여전히 하고 있습니다.&lt;/p&gt;
+우리는 이런 방향성을 가지고 각종 클래스/메소드/변수 등의 이름을 짓기 위해 노력하고 있습니다.&lt;/p&gt;
 
-&lt;p&gt;그 고민의 일부를 소개합니다.&lt;/p&gt;
+&lt;p&gt;우리가 했던 고민들을 소개하기에 앞서, &lt;del&gt;우리의 빠른 퇴근을 막는&lt;/del&gt; 레거시를 레거시로 만들게 한 주범이 무엇인지 볼까요?&lt;/p&gt;
 
-&lt;h2 id=&quot;공용-클래스의-이름&quot;&gt;공용 클래스의 이름&lt;/h2&gt;
+&lt;h2 id=&quot;레거시에서-사용되는-이름&quot;&gt;레거시에서 사용되는 이름&lt;/h2&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DCR&lt;/code&gt; 프로젝트 초반에, 우리는 비즈니스 구현에 도움이 될 다양한 공용 클래스들을 생성하게 되었습니다.
+&lt;p&gt;아직 많은 서비스가 레거시 위에서 돌아가고 있고, 
+새로운 프로젝트로 비즈니스를 옮기는 과정에서 코드 분석이 일어나기 때문에 
+레거시 코드를 볼 기회가 꽤 있는데요.&lt;/p&gt;
+
+&lt;p&gt;“비즈니스를 어떻게 구현 할 것인가” 도 중요하지만, 
+“이름 잘 짓기” 도 그에 못지 않게 중요하다는 것을 몸소 깨닫게 되는 소중한 경험이었습니다. &lt;del&gt;반어법&lt;/del&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;축약어-지옥&quot;&gt;축약어 지옥&lt;/h3&gt;
+
+&lt;p&gt;레거시의 모든 변수, 메소드, API, table 이름, 컬럼 이름은 축약어의 조합으로 이루어져 있습니다.
+실제로 레거시에서 사용중인 몇가지 축약어를 가져 와 보았습니다.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;축약어&lt;/td&gt;
+      &lt;td&gt;풀어 쓴 것&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;rppr&lt;/td&gt;
+      &lt;td&gt;&lt;span class=&quot;shiry-2022-06-20-hidden&quot;&gt;RESPONSIBLE PERSON&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;rprs&lt;/td&gt;
+      &lt;td&gt;&lt;span class=&quot;shiry-2022-06-20-hidden&quot;&gt;REPRESENTATION&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;trnc&lt;/td&gt;
+      &lt;td&gt;&lt;span class=&quot;shiry-2022-06-20-hidden&quot;&gt;TRANSACTION&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cont&lt;/td&gt;
+      &lt;td&gt;&lt;span class=&quot;shiry-2022-06-20-hidden&quot;&gt;CONTENTS&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;rprsProdCd&lt;/td&gt;
+      &lt;td&gt;&lt;span class=&quot;shiry-2022-06-20-hidden&quot;&gt;REPRESENTATION PRODUCT CODE&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cors&lt;/td&gt;
+      &lt;td&gt;&lt;span class=&quot;shiry-2022-06-20-hidden&quot;&gt;COURSE&lt;/span&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div style=&quot;text-align: center; padding: 50px 0;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-06/shiry/let-me-see.jpg&quot; alt=&quot;&quot; style=&quot;width: 60%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.7em;&quot;&gt;축약어를 보는 여러분의 표정&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;위 축약어들이 원래 어떤 단어였는지 유추 가능하신가요? &lt;em&gt;혹시 이건가..?&lt;/em&gt; 싶은 것도 있지만,
+&lt;em&gt;‘저게 대체 뭐야?’&lt;/em&gt; 라는 생각이 드는 것도 있을 것 같은데요. (실제로는 후자가 압도적으로 많습니다.)&lt;/p&gt;
+
+&lt;p&gt;단어사전 없이는 (단어사전이 있다니!! 네, 있습니다.) 저것들이 대체 무엇을 의미하는지 알 방법이 없고,
+그만큼 시간을 낭비하게 됩니다. 우리는 &lt;del&gt;칼퇴를 해야 하기 때문에&lt;/del&gt; 모호함과 싸우느라 시간이 낭비되어서는 안되기 때문에,
+새로운 프로젝트에서 축약어를 사용하지 않기로 했습니다.&lt;/p&gt;
+
+&lt;p&gt;아! 물론 예외는 있습니다. 언제나, 모든 곳에는 예외 조항이 있기 마련이죠.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;관례적으로 사용하는 것
+    &lt;ul&gt;
+      &lt;li&gt;api, bg (background), url/uri, dto&lt;/li&gt;
+      &lt;li&gt;for 문 내에서 사용하는 i, j, k&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hnt-&lt;/code&gt; prefix&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;업계 용어로 사용되는 축약어
+    &lt;ul&gt;
+      &lt;li&gt;fit (Foreign Independent Tour or Travel)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;의미를-알-수-없는-무언가&quot;&gt;의미를 알 수 없는 무언가&lt;/h3&gt;
+
+&lt;p&gt;백문이 불여일견, 일단 보시죠. &lt;del&gt;어디부터 어떻게 설명해야할 지 몰라서 그러는 것은 아닙니다&lt;/del&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; page URI
+/mma/smn/EX00000002
+/trp/pkg/CHPC0PKG0100M100
+/trp/pkg/CHPC0PKG0200M100
+/trp/htl/CHPC0HTL0200M200
+
+&amp;gt; vue component
+CHPC0MAN0001S135.vue
+CHPC0GMT0005P100.vue
+etc ..
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;제가 무슨말을 하고 싶은지 잘 아실 거라고 생각합니다 … 네&lt;/p&gt;
+
+&lt;p&gt;“어떤 이름이 좋은 이름인가” 에 대해서는 의견이 갈릴 수 있지만,
+적어도 이런 이름을 지어서는 안된다는 공감대를 나눌 수 있는 소중한 &lt;del&gt;반어법&lt;/del&gt; 유산인 것 같습니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;새로운-이름-규칙&quot;&gt;새로운 이름 규칙&lt;/h2&gt;
+
+&lt;h3 id=&quot;공용-클래스의-이름&quot;&gt;공용 클래스의 이름&lt;/h3&gt;
+
+&lt;p&gt;새 프로젝트를 시작할 때, 우리는 비즈니스 구현에 도움이 될 다양한 공용 클래스들을 생성하게 되었습니다.
 이것은 자연스럽게 “공용 클래스의 이름을 어떻게 지어야 하나?” 하는 고민을 불러왔는데요.
-단순히 “역할에 맞는 적합한 이름이 무엇인가” 뿐만이 아니라,
-&lt;em&gt;“이 클래스들을 만든 주체가 스프링/자바인지 우리 동료인지 혼란스러워서는 안된다.”&lt;/em&gt; 라는 것 때문이었습니다.&lt;/p&gt;
+“역할에 맞는 적합한 이름” 이 무엇인지 논의함과 동시에,
+&lt;em&gt;“이 클래스들을 만든 주체가 스프링/자바인지 우리 동료인지 혼란스러워서는 안된다.”&lt;/em&gt; 라는 기준을 만족시켜야 했기 때문입니다.&lt;/p&gt;
 
-&lt;p&gt;그런 혼란스러움을 피하기 위해, 우리는 아래 기준을 만족하는 prefix 를 결정하기로 했습니다.&lt;/p&gt;
+&lt;p&gt;그런 혼란스러움을 피하기 위해, 우리는 아래 기준을 만족하는 prefix 를 선정하기로 했습니다.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;동료들이 만들었다는 것을 명시적으로 알려야 한다&lt;/li&gt;
@@ -948,23 +1697,26 @@ inner class 로 만들려는 목적이 도메인 관리를 위한 거라면 차�
 &lt;p&gt;논의 끝에, 우리는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hnt-&lt;/code&gt; 를 prefix 로 사용하기로 했습니다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dcr-&lt;/code&gt; 과 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hnt-&lt;/code&gt; 가 막판에 접전을 벌였으나,&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;프로젝트 이름이 변경되면 DCR 이라는 단어는 그 자체로 레거시가 된다.&lt;/p&gt;
+  &lt;p&gt;프로젝트 이름이 변경되면 DCR 이라는 prefix 는 그 자체로 레거시가 된다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;는 주장에 만장일치로 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hnt-&lt;/code&gt; 로 결정하게 되었습니다. 회사 이름의 축약어이기도 하니 제법 적절한 prefix 인 것 같아요.&lt;/p&gt;
 
+&lt;p&gt;(참고: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DCR&lt;/code&gt; 은 새로 시작하는 프로젝트의 코드네임 입니다.)&lt;/p&gt;
+
 &lt;div style=&quot;text-align: center;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-06/shiry/hnt-from.png&quot; alt=&quot;&quot; style=&quot;width: 60%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.7em;&quot;&gt;Hnt의 정체&lt;/div&gt;
+  &lt;img src=&quot;/assets/images/2022-06/shiry/hnt-from.png&quot; alt=&quot;&quot; style=&quot;width: 50%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.7em;&quot;&gt;Hnt 의 정체&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&quot;dto-클래스의-이름&quot;&gt;DTO 클래스의 이름&lt;/h2&gt;
+&lt;h3 id=&quot;dto-클래스의-이름&quot;&gt;DTO 클래스의 이름&lt;/h3&gt;
 
-&lt;p&gt;이 부분은 아직 100% 확정되지 않은 상태입니다.
-다만, 어떤 고민을 했는지 소개하면 좋을 것 같아 들고 왔습니다.
+&lt;p&gt;이 부분은 아직 100% 확정되지 않았지만, 어떤 고민을 했는지 소개하면 좋을 것 같아 들고 왔습니다.
 Java 커뮤니티에서도 흥하는 주제이기도 하고요.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;DTO 의 주인은 누구인가?&lt;/strong&gt; 라는 질문에 대한 답변이 갈렸기 때문에, 꽤 오랜 토론에도 의견이 좁혀지지 않았습니다.&lt;/p&gt;
+&lt;p&gt;controller 가 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-Dto&lt;/code&gt; 를 받아서 적절한 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-Model&lt;/code&gt; 로 변환한 뒤에 service 에 넘겨 주어야 할지,
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-Dto&lt;/code&gt; 를 service 에서도 사용할지에 대해 의견을 나누었는데요,
+&lt;strong&gt;DTO 의 주인은 누구인가?&lt;/strong&gt; 에 대한 관점이 서로 다르다 보니 의견이 좁혀지지 않았습니다.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -990,62 +1742,22 @@ Java 커뮤니티에서도 흥하는 주제이기도 하고요.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;결국 절충안으로 어정쩡한 (..) 결론이 났습니다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DCR&lt;/code&gt; 로 처음 옮기기로 한 비즈니스의 특성상,
-controller 에서 service 로 데이터를 가공해서 넘겨줄 일이 아예 없었거든요.&lt;/p&gt;
-
-&lt;p&gt;일단 아래 내용으로 진행하고, 추후에 복잡한 비즈니스가 들어오면 한번 더 논의하기로 했습니다.&lt;/p&gt;
+&lt;p&gt;결국 절충안으로 어정쩡한 결론을 내리게 되었습니다. 새로운 프로젝트로 옮기게 된 비즈니스의 특성상,
+controller 에서 service 로 데이터를 가공해서 넘겨줄 일이 없었거든요.
+당분간은 아래 내용을 따르고, 비즈니스가 새로 추가될 때 다시 논의하기로 했습니다.&lt;/p&gt;
 
 &lt;h4 id=&quot;service-가-dto-의-주인-1&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@Service&lt;/code&gt; 가 DTO 의 주인&lt;/h4&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;단, controller 에서 특별한 처리가 필요한 경우, controller &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-Req&lt;/code&gt; 로 받은 후, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-Dto&lt;/code&gt; 로 변환하여 service 에 넘겨준다&lt;/li&gt;
-  &lt;li&gt;controller 에서 별다른 처리를 하지 않으면, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-Dto&lt;/code&gt; 로 받아서 service 에 그대로 넘긴다.&lt;/li&gt;
+  &lt;li&gt;controller 에 비즈니스가 없으면, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-Dto&lt;/code&gt; 로 받아서 service 에 그대로 넘긴다.&lt;/li&gt;
+  &lt;li&gt;controller 에 비즈니스가 있는 경우, controller 에서 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-Req&lt;/code&gt; 로 받은 후, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-Dto&lt;/code&gt; 로 변환하여 service 에 넘겨준다&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;축약어-금지&quot;&gt;축약어 금————지&lt;/h2&gt;
+&lt;h3 id=&quot;단어를-합치는-규칙&quot;&gt;단어를 합치는 규칙&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ICE&lt;/code&gt; 를 벗어나려는 이유에는 많은 것들이 있지만, &lt;strong&gt;추측할 수 없는 축약어&lt;/strong&gt;도 한몫 하는 것 같습니다.
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ICE&lt;/code&gt; 에서 실제 사용중인 축약어를 한번 알아 볼까요?&lt;/p&gt;
-
-&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rprs
-rppr
-cntnt
-trnc
-strt
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div style=&quot;text-align: center; padding: 50px 0;&quot;&gt;
-  &lt;img src=&quot;/assets/images/2022-06/shiry/let-me-see.jpg&quot; alt=&quot;&quot; style=&quot;width: 60%;&quot; /&gt;
-  &lt;div style=&quot;font-size: 0.7em;&quot;&gt;내가 지금 뭘 본거지...?&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;음 … 그만 알아봅시다 …&lt;/p&gt;
-
-&lt;p&gt;위 축약어들이 원래 어떤 단어였는지 유추 가능하신가요? &lt;em&gt;혹시 이건가..?&lt;/em&gt; 싶은 것도 있지만, 
-&lt;em&gt;‘저게 대체 뭐야?’&lt;/em&gt; 라는 생각이 드는 것도 있을 거에요. (실제로는 후자가 압도적으로 많습니다.)&lt;/p&gt;
-
-&lt;p&gt;처음에 말했던 것 처럼, 우리는 “의도가 모호한 것” 을 배제하기로 했기 때문에, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DCR&lt;/code&gt; 에서 축약어를 금지시켰습니다.&lt;/p&gt;
-
-&lt;p&gt;아! 물론 예외는 있습니다. 언제나, 모든 곳에는 예외 조항이 있기 마련이죠.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;관례적으로 사용하는 것
-    &lt;ul&gt;
-      &lt;li&gt;api, bg (background), url/uri, dto&lt;/li&gt;
-      &lt;li&gt;for 문 내에서 사용하는 i, j, k&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hnt-&lt;/code&gt; prefix&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;업계 용어로 사용되는 축약어
-    &lt;ul&gt;
-      &lt;li&gt;fit (Foreign Independent Tour or Travel)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;기타-소소한-컨벤션&quot;&gt;기타 소소한 컨벤션&lt;/h2&gt;
-
-&lt;p&gt;“규칙을 정하는 것” 은 중요합니다. 괜히 팀에서 “코딩 컨벤션” 을 정하는 것이 아닙니다.&lt;/p&gt;
+&lt;p&gt;여러 단어를 조합하여 하나의 변수, 메소드, 클래스 등을 만들 때에는 규칙이 필요합니다.
+그래서 대부분의 조직에서는 “코딩 컨벤션” 을 강제하는데요,
+컨벤션을 한번 정해두면 질문과 고민을 줄이고, 전체적인 코드의 형태를 일관되게 유지 해 줍니다.&lt;/p&gt;
 
 &lt;p&gt;우리는 일반적으로 사용되는 컨벤션을 채택했습니다.&lt;/p&gt;
 
@@ -1072,6 +1784,7 @@ strt
 &lt;p&gt;테이블, 컬럼&lt;/p&gt;
 
 &lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;exhibit_component.exhibit_component_id
+some_great_table.has_wonderful_properties
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;upper_case_with_snake_case&quot;&gt;UPPER_CASE_WITH_SNAKE_CASE&lt;/h4&gt;
@@ -1079,10 +1792,11 @@ strt
 &lt;p&gt;상수 (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;final static&lt;/code&gt;, enum)&lt;/p&gt;
 
 &lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;enum&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DisplayStatus&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;no&quot;&gt;SHOW&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;HIDDEN&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;SHOW&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;HIDDEN&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
 &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HntUtil&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;SOME_CONSTANT_VALIABLE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;hello, world!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;SOME_CONSTANT_VARIABLE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;hello, world!&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -1094,21 +1808,28 @@ strt
 /exhibit/recommended-exhibition-list
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;에피소드---vue-컴포넌트-이름-전하기&quot;&gt;에피소드 - vue 컴포넌트 이름 전하기&lt;/h2&gt;
+&lt;h2 id=&quot;에피소드---vue-컴포넌트-이름-정하기&quot;&gt;에피소드 - vue 컴포넌트 이름 정하기&lt;/h2&gt;
 
 &lt;p&gt;“좋은 이름을 짓기 위해 했던 고민들” 에 대해 이런 저런 썰을 풀어 보았습니다. 
-위에 이야기한 것들은 “공통된 룰을 정하는 과정” 에 좀 더 가까운 것 같기도 해요. 
-마지막으로, “실제 코드에서 사용할 이름을 정하는 과정” 중에 있었던 소소한 대화를 소개해 볼까 합니다.&lt;/p&gt;
+위에 이야기한 것들은 “공통된 룰을 정하는 과정” 에 좀 더 가까운 것 같기도 하네요.&lt;/p&gt;
 
-&lt;p&gt;저와 동료들이, 실제 코드에서 사용될 이름을 짓기 위해 어떤 고민을/어떤 관점에서 나누는지가 보실 수 있어요 !&lt;/p&gt;
+&lt;p&gt;마지막으로, “실제 코드에서 사용할 이름을 정하는 과정” 중에 있었던 소소한 대화를 소개하고 턴을 마치도록 하겠습니다.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;이렇게 생긴 컴포넌트는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-list&lt;/code&gt; 입니까 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-grid&lt;/code&gt; 입니까 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-stack&lt;/code&gt; 입니까 ?&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;div style=&quot;text-align: center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-06/shiry/lorem-thumbnail-inline-list.png&quot; alt=&quot;&quot; style=&quot;width: 60%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.7em;&quot;&gt;thumbnail-inline-list&lt;/div&gt;
+&lt;/div&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;가로로 늘어진 것을 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-horizontal-stack&lt;/code&gt; 이라고 할까요, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-inline-list&lt;/code&gt; 라고 할까요?&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;div style=&quot;text-align: center;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2022-06/shiry/lorem-product-grid.png&quot; alt=&quot;&quot; style=&quot;width: 40%;&quot; /&gt;
+  &lt;div style=&quot;font-size: 0.7em;&quot;&gt;product-type-a-grid&lt;/div&gt;
+&lt;/div&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;🧑🏻 : 이렇게 생긴 컴포넌트는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;product-thumbnail-grid&lt;/code&gt; 입니까?&lt;/p&gt;
@@ -1126,7 +1847,15 @@ strt
 
 &lt;hr /&gt;
 
+&lt;h2 id=&quot;마무리&quot;&gt;마무리&lt;/h2&gt;
+
 &lt;p&gt;&lt;del&gt;쓸데없이&lt;/del&gt; 긴 글 읽어 주셔서 감사합니다 :D&lt;/p&gt;
 
 &lt;p&gt;“프로젝트 표준화 여정” 에 대한 글은 이후에 몇편 더 올라갈 예정이에요.
-이 글을 포함해서 이후에 올라갈 글들이, 우리와 비슷한 고민을 하고 있을 누군가에게 작은 가이드가 되었으면 좋겠습니다.&lt;/p&gt;</content><author><name>HanaTour</name><email>15771233@hanatour.com</email></author><category term="blog" /><category term="setting" /><summary type="html">안녕하세요 :)</summary></entry></feed>
+이 글을 포함해서 이후에 올라갈 글들이, 우리와 비슷한 고민을 하고 있을 누군가에게 작은 가이드가 되었으면 좋겠습니다.&lt;/p&gt;
+
+&lt;style&gt;
+  .shiry-2022-06-20-hidden {
+    background-color: black; color: black;
+  }
+&lt;/style&gt;</content><author><name>HanaTour</name><email>15771233@hanatour.com</email></author><category term="blog" /><category term="setting" /><summary type="html">안녕하세요 :)</summary></entry></feed>
