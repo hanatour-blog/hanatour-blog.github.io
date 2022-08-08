@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "github-pages"
-gem "minimal-mistakes-jekyll"
+gem "minimal-mistakes-jekyll", :git => "https://github.com/mmistakes/minimal-mistakes.git", :tag => "4.24.0"
 group :jekyll_plugins do
     gem "jekyll-paginate"
     gem "jekyll-sitemap"
